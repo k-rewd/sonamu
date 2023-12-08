@@ -1,5 +1,14 @@
+import './home.css'
+
 export default function Home() {
   return (
-    <h1>HOME</h1>
+    <>
+      <body >
+        <h1 id='home'>HOME</h1>
+        <div id='snm-sign'>
+          hello
+        </div>
+      </body>
+    </>
   )
 }

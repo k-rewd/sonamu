@@ -1,16 +1,21 @@
+import './navbar.css'
+
 export default function Navbar() {
   return (
-  <nav>
-    <a href='/'>site name</a>
-    <ul>
-      <li>
-        <a href='/gallery'>gallery</a>
-      </li>
-      <li>
-        <a href='/about'>about</a>
-      </li>
+    <nav >
+      <ul id='navbar'>
+        <a href='/'>sonamu</a>
+        <li>
+          <a href='/artists'>artists</a>
+        </li>
+        <li>
+          <a href='/gallery'>gallery</a>
+        </li>
+        <li>
+          <a href='/contact'>contact</a>
+        </li>
 
-    </ul>
-  </nav>
+      </ul>
+    </nav>
   )
 }

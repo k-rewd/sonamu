@@ -1,0 +1,29 @@
+/* body {
+  padding: 1rem;
+  margin: 0 auto;
+  max-height: 100px;
+  border: 1px solid red;
+  
+}
+
+#navbar, ul {
+  border: 1px solid red;
+
+}
+ */
+nav {
+  
+}
+
+ #navbar {
+  border: 1px solid red;
+  padding: 1rem;
+  margin: 0 auto;
+  
+  position: sticky;
+
+  display: flex;
+  justify-content: space-around;
+  
+  list-style: none;
+ }
