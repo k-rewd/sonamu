@@ -3,11 +3,18 @@
   display: flex;
   justify-content: center;
   background-color: black;
-  height: fit-content(20em);
+  /* height: fit-content(20em); */
+  height: 800px;
   color: white;
 }
 
 #snm-sign {
-  position: relative;
+  border: 1px solid red;
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  height: 250px;
+  width: 250px;
+  color: white;
   
 }
