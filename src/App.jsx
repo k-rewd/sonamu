@@ -1,5 +1,3 @@
-// import { useState } from 'react'
-import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -9,7 +7,6 @@ import './styles.css'
 import Contact from './components/Contact'
 
 export default function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
   return (
         <>
         <nav>

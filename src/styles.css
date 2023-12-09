@@ -9,6 +9,16 @@ body {
   
 }
 
-/* nav {
-  top:0px;
-} */
+nav {
+  border: 1px solid red;
+  
+  top: 0px;
+  position: sticky;
+  height: 100px;
+
+  padding: 1em;
+  margin: 0 auto;
+  background-color: black;
+
+  
+}

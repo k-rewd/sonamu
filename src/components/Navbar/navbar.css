@@ -11,19 +11,9 @@
 
 }
  */
-nav {
-  position: sticky;
-  top: 0px;
-}
 
  #navbar {
-  border: 1px solid red;
-  height: 90px;
-  padding: 1em;
-  margin: 0 auto;
-  background-color: black;
-
-
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
