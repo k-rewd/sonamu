@@ -1,7 +1,7 @@
 body {
   /* background: #333; */
   /* max-width: 400px; */
-  padding: 1rem 0 ;
+  padding: 0 auto;
   margin: 0 auto;
   /* max-height: 100px; */
   /* border: 1px solid red; */
@@ -9,6 +9,6 @@ body {
   
 }
 
-nav {
+/* nav {
   top:0px;
-}
+} */

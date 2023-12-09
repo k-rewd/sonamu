@@ -12,18 +12,21 @@
 }
  */
 nav {
-  
+  position: sticky;
+  top: 0px;
 }
 
  #navbar {
   border: 1px solid red;
-  padding: 1rem;
+  height: 90px;
+  padding: 1em;
   margin: 0 auto;
-  
-  position: sticky;
+  background-color: black;
+
 
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   
   list-style: none;
  }

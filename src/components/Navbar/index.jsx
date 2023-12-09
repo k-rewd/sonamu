@@ -2,7 +2,7 @@ import './navbar.css'
 
 export default function Navbar() {
   return (
-    <nav >
+    <nav>
       <ul id='navbar'>
         <a href='/'>sonamu</a>
         <li>
@@ -14,7 +14,6 @@ export default function Navbar() {
         <li>
           <a href='/contact'>contact</a>
         </li>
-
       </ul>
     </nav>
   )
