@@ -12,12 +12,18 @@ export default function App() {
         <nav>
           <Navbar />
         </nav>
-          <Routes>
+          {/* <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/artists' element={<Artists/> }/>
             <Route path='/contact' element={<Contact/>}/>
-          </Routes>
+          </Routes> */}
+          <div><Home/></div>
+          <div id='artists'><Artists/></div>
+          <div id='artists'><Gallery/></div>
+          <div id='artists'><Contact/></div>
+
+          
         </>
   )
 }
