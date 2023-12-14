@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Artists from './components/Artists'
-import Gallery from './components/Gallery'
+import Navbar from './sections/Navbar'
+import Home from './sections/Home'
+import Artists from './sections/Artists'
+import Gallery from './sections/Gallery'
 import './styles.css'
-import Contact from './components/Contact'
+import Contact from './sections/Contact'
 
 export default function App() {
   return (
