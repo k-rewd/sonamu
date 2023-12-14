@@ -14,9 +14,25 @@
 
  #navbar {
   /* height: 100px; */
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   align-items: flex-end;
   
-  list-style: none;
+  list-style: none; */
  }
+
+ nav {
+  border: 1px solid red;
+  top: 0px;
+  position: fixed;
+  height: 20vh;
+  width: 100%;
+
+  padding: 1rem;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+}
+

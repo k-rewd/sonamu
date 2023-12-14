@@ -9,14 +9,14 @@ import Contact from './sections/Contact'
 export default function App() {
   return (
     <>
-      <nav>
-        <Navbar />
-      </nav>
+
+      <Navbar />
+
       <body>
-      <Home />
-      <Artists />
-      <Gallery />
-      <Contact />
+        <Home />
+        <Artists />
+        <Gallery />
+        <Contact />
       </body>
 
     </>
@@ -24,7 +24,7 @@ export default function App() {
 }
 
 
-      {/* <nav>
+{/* <nav>
         <Navbar />
       </nav>
 

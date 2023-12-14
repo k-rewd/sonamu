@@ -7,7 +7,7 @@ export default function Navbar() {
   const renderNavLinks = (content) => {
     const scrollToId = `${content.toLowerCase()}Section`;
     const handleClickNav = () => {
-      document.getElementById(scrollToId).scrollIntoView({behavior: 'smooth'})
+      document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth', block: 'end' })
     }
 
     return (
@@ -20,11 +20,13 @@ export default function Navbar() {
       </ul>
     )
   }
-  
+
   return (
     <div>
-      <div id='navbar'>
-        {navLinks.map(nav => renderNavLinks(nav))}
+      <div >
+        <nav> 
+          {navLinks.map(nav => renderNavLinks(nav))}
+        </nav>
       </div>
     </div>
   )
