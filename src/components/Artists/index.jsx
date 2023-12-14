@@ -1,3 +1,6 @@
 export default function Artists() {
-  return <h1>ARTISTS</h1>
-}
+  return (
+  <section id='artistsSection'>
+    <h1>ARTISTS</h1>
+  </section>
+)}
