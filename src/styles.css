@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  scroll-snap-type: both mandatory;
+  scroll-padding-top: 20vh;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   /* background: #333; */
   /* max-width: 400px; */
@@ -29,5 +40,10 @@ nav {
 }
 section {
   height: 80vh;
-  
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }

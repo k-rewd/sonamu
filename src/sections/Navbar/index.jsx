@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div >
+      <div className='navContainer'>
         <nav> 
           {navLinks.map(nav => renderNavLinks(nav))}
         </nav>
