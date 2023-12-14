@@ -8,24 +8,29 @@ import Contact from './sections/Contact'
 
 export default function App() {
   return (
-        <>
-        <nav>
-          <Navbar />
-        </nav>
-          {/* <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/gallery' element={<Gallery />} />
-            <Route path='/artists' element={<Artists/> }/>
-            <Route path='/contact' element={<Contact/>}/>
-          </Routes> */}
-          <div><Home/></div>
-          <div id='artists'><Artists/></div>
-          <div id='artists'><Gallery/></div>
-          <div id='artists'><Contact/></div>
+    <>
+      <nav>
+        <Navbar />
+      </nav>
+      <body>
+      <Home />
+      <Artists />
+      <Gallery />
+      <Contact />
+      </body>
 
-          
-        </>
+    </>
   )
 }
 
 
+      {/* <nav>
+        <Navbar />
+      </nav>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/artists' element={<Artists />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes> */}

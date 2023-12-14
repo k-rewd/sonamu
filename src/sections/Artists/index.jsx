@@ -1,3 +1,5 @@
+import './artists.css'
+
 export default function Artists() {
   return (
   <section id='artistsSection'>

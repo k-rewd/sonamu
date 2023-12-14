@@ -1,12 +1,11 @@
 
 #sonamuSection {
   border: 1px solid red;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
   background-color: black;
-  /* height: fit-content(20em); */
-  height: 1000px;
   color: white;
 }
 
