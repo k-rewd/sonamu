@@ -21,23 +21,34 @@
   list-style: none; */
  }
 
+ .navContainer {
+  
+ }
+
  nav {
   border: 1px solid red;
   top: 0px;
   position: fixed;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
+  background-color: transparent;
 
+  
+  background-image: url(../../assets/logo2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1000px;
   padding: 1rem;
-  background-color: gray;
-
-}
-
-.navContainer nav {
+  
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   list-style: none;
+}
+
+.navContainer nav {
+
+  /* background-color: red; */
 
 }
 

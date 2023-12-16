@@ -1,4 +1,5 @@
 import './navbar.css'
+import logo2 from '../../assets/logo2.png'
 
 export default function Navbar() {
 
@@ -7,7 +8,7 @@ export default function Navbar() {
   const renderNavLinks = (content) => {
     const scrollToId = `${content.toLowerCase()}Section`;
     const handleClickNav = () => {
-      document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth', block: 'end' })
+      document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
 
     return (
@@ -23,8 +24,8 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className='navContainer'>
-        <nav> 
+      <div className='navContainer' >
+        <nav > 
           {navLinks.map(nav => renderNavLinks(nav))}
         </nav>
       </div>
