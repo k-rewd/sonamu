@@ -1,12 +1,12 @@
 import './home.css'
+import seal from '../../assets/seal.png'
 
 export default function Home() {
   return (
     <section id='sonamuSection'>
       <h1 >HOME</h1>
-      {/* <div id='snm-sign'>
-        hello
-      </div> */}
+      <img id='snm-sign' src={seal}/>
+
     </section>
   )
 }

@@ -1,0 +1,10 @@
+footer {
+  border: 1px solid red;
+  bottom: 0px;
+  position: fixed;
+  height: 20vh;
+  width: 100%;
+
+  padding: 1rem;
+  background-color: gray;
+}

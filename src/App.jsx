@@ -5,6 +5,7 @@ import Artists from './sections/Artists'
 import Gallery from './sections/Gallery'
 import './styles.css'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Gallery />
         <Contact />
       </body>
+        {/* <Footer /> */}
 
     </>
   )

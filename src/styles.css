@@ -44,6 +44,7 @@ section {
   scroll-snap-stop: always;
 }
 
+
 ::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }

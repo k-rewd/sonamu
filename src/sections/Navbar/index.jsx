@@ -43,4 +43,56 @@ export default function Navbar() {
         <li>
           <a href='/contact'>contact</a>
         </li>
-      </ul> */}
+      </ul> */
+    
+    ////////
+    
+    
+    }
+
+// // EDIT THIS FILE TO COMPLETE ASSIGNMENT QUESTION 1
+// const csv = require('@fast-csv/format');
+// const { writeToPath } = require('@fast-csv/format');
+
+// const { chromium } = require('playwright');
+
+// async function saveHackerNewsArticles() {
+//   // launch browser
+//   let browser;
+//   try {
+//     browser = await chromium.launch({ headless: true });
+//     const context = await browser.newContext();
+//     const page = await context.newPage();
+
+//     // go to Hacker News
+//     await page.goto("https://news.ycombinator.com");
+
+//     // Extract data from the page
+//     const articles = await page.evaluate(() => {
+//       const anchors = document.querySelectorAll('.titleline > a')
+//       return Array.from(anchors).map(anchor => ({
+//         title: anchor.innerText,
+//         url: anchor.href
+
+//       }))
+//   });
+//     // Print the extracted data
+//     console.log(articles.slice(0,10));
+//     const topTenArticles = articles.slice(0,10)
+
+//     writeToPath('./data.csv', topTenArticles);
+
+//   } catch (error) {
+//     console.error('ERROR!!:', error);
+//   } finally {
+//     if (browser) {
+//       await browser.close();
+//     }
+//   }
+// }
+
+
+// (async () => {
+//   await saveHackerNewsArticles();
+// })();
+
