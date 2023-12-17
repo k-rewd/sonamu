@@ -21,12 +21,29 @@
   list-style: none; */
  }
 
- .navContainer {
-  
+ .navENG {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style: none;
+  padding: 5px;
+
  }
 
+ .navENG li:hover {
+  visibility: hidden;
+ }
+
+ 
+
  nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
   top: 0px;
   position: fixed;
   height: 15vh;
@@ -37,8 +54,8 @@
   background-image: url(../../assets/logo2.png);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 1000px;
-  padding: 1rem;
+  background-size: 45%;
+  padding: 5px;
   
   display: flex;
   justify-content: space-around;
@@ -53,8 +70,19 @@
 }
 
 .navContainer button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border: none;
   background: none;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+
+
+
+/* .navContainer li:hover .navKrn {display: block;} */
+
+/* .navContainer li:hover .navKrn {
+  display: block;
+} */
+

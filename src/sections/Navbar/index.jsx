@@ -4,6 +4,8 @@ import logo2 from '../../assets/logo2.png'
 export default function Navbar() {
 
   const navLinks = ['sonamu', 'artists', 'gallery', 'contact']
+  const navLinkKrn = ['소', '나', '무', 'ㅋㅋ']
+
 
   const renderNavLinks = (content) => {
     const scrollToId = `${content.toLowerCase()}Section`;
@@ -13,7 +15,7 @@ export default function Navbar() {
 
     return (
       <ul key={content} >
-        <li>
+        <li >
           <button
             onClick={handleClickNav}
           >{content}</button>
@@ -22,13 +24,27 @@ export default function Navbar() {
     )
   }
 
+
   return (
-    <div>
-      <div className='navContainer' >
-        <nav > 
-          {navLinks.map(nav => renderNavLinks(nav))}
-        </nav>
+    
+    <div className='navContainer' >
+      
+      {/* <nav className='navEng'>
+        {navLinks.map(nav => renderNavLinks(nav))}
+      </nav> */}
+      <nav className='navKrn'>
+        {navLinkKrn.map(nav => renderNavLinks(nav))}
+
+      </nav>
+      <div >
+        <ul className='navENG'>
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+        </ul>
       </div>
+
     </div>
   )
 }
@@ -45,11 +61,11 @@ export default function Navbar() {
           <a href='/contact'>contact</a>
         </li>
       </ul> */
-    
-    ////////
-    
-    
-    }
+
+  ////////
+
+
+}
 
 // // EDIT THIS FILE TO COMPLETE ASSIGNMENT QUESTION 1
 // const csv = require('@fast-csv/format');
