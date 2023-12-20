@@ -5,16 +5,27 @@
 
   display: flex;
   justify-content: center;
-  background-color: gray;
+  background-color: black;
   color: white;
 }
 
 #snm-sign {
   /* border: 1px solid red; */
-  position: fixed;
+  position: absolute;
   left: 15px;
   top: 150px;
   height: 700px;
   /* width: 250px; */
   color: white; 
+}
+
+.videoBackground {
+  display: flex;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-color: rgba(0,0,0,.5); */
 }
