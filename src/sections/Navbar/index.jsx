@@ -1,13 +1,23 @@
 import './navbar.css'
 import logo2 from '../../assets/logo2.png'
+import React, { useState } from 'react'
 
 export default function Navbar() {
 
   const navLinks = ['sonamu', 'artists', 'gallery', 'contact']
-  const navLinkKrn = ['소', '나', '무', 'ㅋㅋ']
+  const navLinkKrn = ['소나무', '아티스트', '갤러리', '연락처']
 
+  const [hoveredIndex, setHoveredIndex] = useState(null)
 
-  const renderNavLinks = (content) => {
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index)
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  }
+
+  const renderNavLinks = (content, index) => {
     const scrollToId = `${content.toLowerCase()}Section`;
     const handleClickNav = () => {
       document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -18,7 +28,9 @@ export default function Navbar() {
         <li >
           <button
             onClick={handleClickNav}
-          >{content}</button>
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >{hoveredIndex === index ? navLinkKrn[index] : content}</button>
         </li>
       </ul>
     )
@@ -28,88 +40,12 @@ export default function Navbar() {
   return (
     
     <div className='navContainer' >
-      
-      {/* <nav className='navEng'>
-        {navLinks.map(nav => renderNavLinks(nav))}
-      </nav> */}
-      <nav className='navKrn'>
-        {navLinkKrn.map(nav => renderNavLinks(nav))}
-
+      <nav>
+        {navLinks.map((nav, index) => renderNavLinks(nav, index))}
       </nav>
-      <div >
-        <ul className='navENG'>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-        </ul>
-      </div>
-
     </div>
   )
 }
 
-{/* <ul id='navbar'>
-        <a href='/'>sonamu</a>
-        <li>
-          <a href='/artists'>artists</a>
-        </li>
-        <li>
-          <a href='/gallery'>gallery</a>
-        </li>
-        <li>
-          <a href='/contact'>contact</a>
-        </li>
-      </ul> */
 
-  ////////
-
-
-}
-
-// // EDIT THIS FILE TO COMPLETE ASSIGNMENT QUESTION 1
-// const csv = require('@fast-csv/format');
-// const { writeToPath } = require('@fast-csv/format');
-
-// const { chromium } = require('playwright');
-
-// async function saveHackerNewsArticles() {
-//   // launch browser
-//   let browser;
-//   try {
-//     browser = await chromium.launch({ headless: true });
-//     const context = await browser.newContext();
-//     const page = await context.newPage();
-
-//     // go to Hacker News
-//     await page.goto("https://news.ycombinator.com");
-
-//     // Extract data from the page
-//     const articles = await page.evaluate(() => {
-//       const anchors = document.querySelectorAll('.titleline > a')
-//       return Array.from(anchors).map(anchor => ({
-//         title: anchor.innerText,
-//         url: anchor.href
-
-//       }))
-//   });
-//     // Print the extracted data
-//     console.log(articles.slice(0,10));
-//     const topTenArticles = articles.slice(0,10)
-
-//     writeToPath('./data.csv', topTenArticles);
-
-//   } catch (error) {
-//     console.error('ERROR!!:', error);
-//   } finally {
-//     if (browser) {
-//       await browser.close();
-//     }
-//   }
-// }
-
-
-// (async () => {
-//   await saveHackerNewsArticles();
-// })();
 
