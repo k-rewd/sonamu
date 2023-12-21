@@ -31,21 +31,25 @@
 
   top: 0px;
   position: fixed;
-  height: 15vh;
+  height: 10vh;
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: rgba(0,0,0,.5);
+
 
   
-  background-image: url(../../assets/logo2.png);
+  /* background-image: url(../../assets/logo2.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 45%;
-  padding: 5px;
+  padding: 5px; */
   
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
+
+  z-index: 2;
 }
 
 .navContainer nav {
@@ -60,7 +64,16 @@
   border: none;
   background: none;
   font-family: 'Times New Roman', Times, serif;
-  width: 100px;
+  width: 150px;
+  /* border-right: 1px solid white; */
+  color: white;
+  height: 10vh;
+  padding: 0;
+}
+
+.navContainer button:hover {
+  /* color: black; */
+  background-color: rgba(104, 104, 104, 0.2);
 }
 
 

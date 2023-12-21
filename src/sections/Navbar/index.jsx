@@ -6,6 +6,12 @@ export default function Navbar() {
 
   const navLinks = ['sonamu', 'artists', 'gallery', 'contact']
   const navLinkKrn = ['소나무', '아티스트', '갤러리', '연락처']
+  const krnFontStyle = {
+    // fontStyle: 'italic',
+    
+    fontStyle: 'oblique',
+    fontSize: '16px'
+  }
 
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
@@ -30,7 +36,12 @@ export default function Navbar() {
             onClick={handleClickNav}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-          >{hoveredIndex === index ? navLinkKrn[index] : content}</button>
+          >{hoveredIndex === index ? (
+            <span style={krnFontStyle}>{navLinkKrn[index]}</span>
+          ) : (
+            content
+          )}
+          </button>
         </li>
       </ul>
     )
@@ -38,7 +49,7 @@ export default function Navbar() {
 
 
   return (
-    
+
     <div className='navContainer' >
       <nav>
         {navLinks.map((nav, index) => renderNavLinks(nav, index))}
