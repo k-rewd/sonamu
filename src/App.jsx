@@ -6,6 +6,8 @@ import Gallery from './sections/Gallery'
 import './styles.css'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import About from './sections/About'
+import Aftercare from './sections/Aftercare'
 
 export default function App() {
   return (
@@ -15,8 +17,11 @@ export default function App() {
 
       <body>
         <Home />
+        <About />
+
         <Artists />
         <Gallery />
+        <Aftercare />
         <Contact />
       </body>
         {/* <Footer /> */}

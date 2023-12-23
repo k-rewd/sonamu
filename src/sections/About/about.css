@@ -1,63 +1,39 @@
-
-#sonamuSection {
-  /* border: 1px solid red; */
-  /* height: 100vh; */
-
+#aboutSection {
   display: flex;
   justify-content: center;
   background-color: gray;
   color: white;
 }
 
-.overlay {
-  
+.about-overlay {
+
   position: absolute;
   /* border: 1px solid red; */
   height: 100vh;
   width: 100%;
 }
 
-.splash {
+#about-splash {
   /* border: 1px solid red; */
   background-color: rgba(104, 104, 104, 0.2);
-
   position: absolute;
-  /* left: 15px; */
-  top: 150px;
   height: 80vh;
   width: 100%;
-  color: white; 
-
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
-  
-
-}
-
-.splash-text {
-  display: flex;
-  justify-content: flex-end;
-  padding: 100px;
-}
-.logo-seal {
-  /* border: 1px solid red; */
-
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 50px;
 
 }
-.logoimage2 {
-  /* border: 1px solid red; */
 
-  filter: invert(1);
-  height: 100px;
+.about-splash-text {
+  border: 1px solid red;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  margin: 5%;
 
-}
-.snm-seal {
-  /* border: 1px solid red; */
-  height: 125px;
+
 }
 
 .videoBackground {
