@@ -25,12 +25,13 @@
 }
 
 .aftercare-instructions {
-  /* border: 1px solid red; */
-  width: 70%;
-
+  border: 1px solid red;
+  width: 75%;
+  padding:20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20px;
 
 }
 
@@ -46,7 +47,6 @@
   height: 50%;
   display: flex;
   justify-content: center;
-  gap: 80px;
   align-items: center;
 
 }
@@ -85,10 +85,19 @@
   background-image: url('../../assets/flash2.png');
   background-position: center;
   /* opacity: .5; */
-  height: 450px;
-  width: 650px;
+  position: relative;
+  width: 40%;
   border-radius: 50%;
 
+  line-height: 0.5;
+  position: relative;
+
+}
+
+#ac-sign-container::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 
 #afterCare-sign {
@@ -96,17 +105,17 @@
   color: black;
   position: absolute;
   margin: 0;
-  padding: 15px 75px;
+  padding: 15px 50px;
   font-size: 50px;
   background-color: white;
 
 }
 
 #imageAB {
-  height: 350px;
+  /* height: 350px; */
   /* border-radius: 50%; */
 }
 
 #imageCD {
-  height: 300px;
+  height: 100%;
 }
