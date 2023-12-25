@@ -1,6 +1,19 @@
 #contactSection {
   /* height: 100vh; */
-  background-color:gray;
-  color: white;
+  background-color:white;
 
+}
+
+.contact-splash {
+  /* border: 1px solid red; */
+  background-color: rgba(104, 104, 104, 0.2);
+  height: 80vh;
+  width: 100%;
+
+  position: relative;
+  top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

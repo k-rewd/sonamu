@@ -1,6 +1,6 @@
 #aftercareSection {
   /* height: 100vh; */
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 
   display: flex;
   justify-content: center;
@@ -9,14 +9,104 @@
 
 .aftercare-splash {
   /* border: 1px solid red; */
-  background-color: rgba(104, 104, 104, 0.2);
+  background-color: white;
 
   /* left: 15px; */
 
-  height: 80vh;
-  width: 100%;
-  margin-top: 150px;
+  /* height: 80vh; */
+  width: 80%;
+  /* margin-top: 90px; */
+  padding-top: 150px;
+
+  display: flex;
+  justify-content: center;
 
 
-  
+}
+
+.aftercare-instructions {
+  /* border: 1px solid red; */
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#sectionAB {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#sectionCD {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+
+}
+
+#aftercare1 {
+  /* border: 1px solid red; */
+  /* padding: 50px 0; */
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+
+}
+
+#aftercare2 {
+  /* border: 1px solid red; */
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+
+}
+
+#ac-sign-container {
+  /* border: 1px solid red; */
+
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/flash2.png');
+  background-position: center;
+  /* opacity: .5; */
+  height: 450px;
+  width: 650px;
+  border-radius: 50%;
+
+}
+
+#afterCare-sign {
+  /* border: 1px solid red; */
+  color: black;
+  position: absolute;
+  margin: 0;
+  padding: 15px 75px;
+  font-size: 50px;
+  background-color: white;
+
+}
+
+#imageAB {
+  height: 350px;
+  /* border-radius: 50%; */
+}
+
+#imageCD {
+  height: 300px;
 }

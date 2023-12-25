@@ -10,17 +10,19 @@ export default function Contact() {
 
   return (
     <section id='contactSection'>
-      <h1>CONTACT</h1>
+      <div className='contact-splash'>
+
+      {/* <h1>CONTACT</h1>
       <ul>
         <li>3921 W. 6th street. Koreantown, los Angeles</li>
         <li>sonamu.tattoo@gmail.com</li>
         <li>walk-ins welcome 12pm - 6pm</li>
+        <li>
+          full name, phone number, concept, placement, sizing, color/black+gray, reference photos
+        </li>
         <li></li>
         <li></li>
-        <li></li>
-
       </ul>
-
       <form ref={form} onSubmit={sendEmail}>
         <input type='text'
         placeholder='Full Name'
@@ -36,7 +38,8 @@ export default function Contact() {
         <button type='submit'>Book</button>
 
 
-      </form>
+      </form> */}
+      </div>
     </section>
   ) 
 }

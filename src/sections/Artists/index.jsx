@@ -13,6 +13,7 @@ export default function Artists() {
 
             <input type='radio' name='slide' id='c1' />
             <label for='c1' className='card'>
+
               <div>hello</div>
               <div className='row'>
                 <div className='icon'>1</div>
@@ -20,6 +21,8 @@ export default function Artists() {
                   <h4>AB</h4>
                   <p>blablalblablablablblalblablab</p>
                 </div>
+
+
               </div>
             </label>
 
@@ -70,6 +73,18 @@ export default function Artists() {
                 </div>
               </div>
             </label>
+            {/* ARTIST 6*/}
+            <input type='radio' name='slide' id='c6' />
+            <label for='c6' className='card'>
+              <div className='row'>
+                <div className='icon'>6</div>
+                <div className='description'>
+                  <h4>HAZE</h4>
+                  <p>blablalblablablablblalblablab</p>
+                </div>
+              </div>
+            </label>
+
 
           </div>
         </div>
