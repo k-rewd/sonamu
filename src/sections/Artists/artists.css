@@ -9,7 +9,9 @@
   background-color:whitesmoke;
   display: flex;
   justify-content: center;
-
+  
+  
+  background-repeat: no-repeat;
 }
 
 #artist-splash {
@@ -38,9 +40,9 @@
 
 .card {
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
-  width:80px;
+  width:100px;
   border-radius: .75rem;
   background-size: cover;
   cursor: pointer;
@@ -49,8 +51,8 @@
   margin: 0 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* align-items: flex-end; */
+  justify-content:flex-end;
+  align-items: flex-start;
   transition: .6s cubic-bezier(.28,-0.03,0,.99);
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
@@ -60,7 +62,7 @@
   color:white;
   display: flex;
   flex-wrap: nowrap;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   
 }
@@ -69,7 +71,8 @@
   background: #223;
   color:white;
   border-radius: 50%;
-  width: 50px;
+  height: 65px;
+  width: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +92,25 @@
   transition: all .3s ease;
 }
 
+
+.artistName-container {
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.artistName {
+  /* border: 1px solid red; */
+  transform: rotate(270deg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.459);;
+
+}
+
 .description p {
   color: #b0b0ba;
   padding-top: 5px;
@@ -96,11 +118,13 @@
 
 .description h4 {
   text-transform: uppercase;
+  
 }
 
 input {
   display: none;
 }
+
 
 input:checked + label {
   width: 1200px;
@@ -109,21 +133,44 @@ input:checked + label {
 input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
+  
 }
 
+input:checked + label .artistName {
+  transform: translateX(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+input:not(:checked) + label .artistName {
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+
 .card[for='c1'] {
-  background-image: url('../../assets/AB.png');
+  background-image: url('../../assets/ab1.jpg');
   background-position: center;
+  background-repeat: no-repeat;
 }
 .card[for='c2'] {
-  background-image: url('');
+  background-image: url('../../assets/bones.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 .card[for='c3'] {
-  background-image: url('');
+  background-image: url('../../assets/gray1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .card[for='c4'] {
-  background-image: url('');
+  background-image: url('../../assets/derek.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .card[for='c5'] {
-  background-image: url('');
+  background-image: url('../../assets/rae.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }

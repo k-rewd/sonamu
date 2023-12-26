@@ -13,8 +13,9 @@ export default function Artists() {
 
             <input type='radio' name='slide' id='c1' />
             <label for='c1' className='card'>
-
-              <div>hello</div>
+              <div className='artistName-container'>
+                <h1 className='artistName'>AB</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>1</div>
                 <div className='description'>
@@ -32,6 +33,9 @@ export default function Artists() {
             {/* ARTIST 2*/}
             <input type='radio' name='slide' id='c2' />
             <label for='c2' className='card'>
+              <div className='artistName-container'>
+                <h1 className='artistName'>BONES</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>2</div>
                 <div className='description'>
@@ -43,6 +47,9 @@ export default function Artists() {
             {/* ARTIST 3*/}
             <input type='radio' name='slide' id='c3' />
             <label for='c3' className='card'>
+              <div className='artistName-container'>
+                <h1 className='artistName'>GRAY</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>3</div>
                 <div className='description'>
@@ -54,6 +61,9 @@ export default function Artists() {
             {/* ARTIST 4*/}
             <input type='radio' name='slide' id='c4' />
             <label for='c4' className='card'>
+              <div className='artistName-container'>
+                <h1 className='artistName'>DEREK</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>4</div>
                 <div className='description'>
@@ -65,6 +75,9 @@ export default function Artists() {
             {/* ARTIST 5*/}
             <input type='radio' name='slide' id='c5' />
             <label for='c5' className='card'>
+              <div className='artistName-container'>
+                <h1 className='artistName'>RAE</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>5</div>
                 <div className='description'>
@@ -76,6 +89,9 @@ export default function Artists() {
             {/* ARTIST 6*/}
             <input type='radio' name='slide' id='c6' />
             <label for='c6' className='card'>
+              <div className='artistName-container'>
+                <h1 className='artistName'>HAZE</h1>
+              </div>
               <div className='row'>
                 <div className='icon'>6</div>
                 <div className='description'>
