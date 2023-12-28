@@ -1,6 +1,8 @@
 import './artists.css'
 
 export default function Artists() {
+  const abArt = ['1','2','3','4','5','6','7','8']
+
   return (
     <section id='artistsSection'>
       <body id='artist-splash'>
@@ -13,13 +15,26 @@ export default function Artists() {
 
             <input type='radio' name='slide' id='c1' />
             <label for='c1' className='card'>
-              <div className='artistName-container'>
-                <h1 className='artistName'>AB</h1>
+
+              <div className='artist'>
+                <div className='artistName-container'>
+                  <h1 className='artistName'>AB</h1>
+                </div>
+                <div className='artist-images'>
+                  {abArt.map(art => (
+                    <div className='art'>
+                      {art}
+                    </div>
+                    
+                  ))}
+
+                </div>
               </div>
+
               <div className='row'>
                 <div className='icon'>1</div>
                 <div className='description'>
-                  <h4>AB</h4>
+                  <h4>@AB</h4>
                   <p>blablalblablablablblalblablab</p>
                 </div>
 
@@ -39,7 +54,7 @@ export default function Artists() {
               <div className='row'>
                 <div className='icon'>2</div>
                 <div className='description'>
-                  <h4>BONES</h4>
+                  <h1>BONES</h1>
                   <p>blablalblablablablblalblablab</p>
                 </div>
               </div>
