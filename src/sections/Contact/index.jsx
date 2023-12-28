@@ -4,6 +4,7 @@ import './contact.css'
 export default function Contact() {
   const form = useRef()
   const sendEmail = () => {
+    
 
   }
 
