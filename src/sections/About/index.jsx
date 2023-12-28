@@ -3,6 +3,7 @@ import './about.css'
 import seal from '../../assets/seal.png'
 import logoimage2 from '../../assets/logo2SANseal.png'
 import sonamupr from '../../assets/sonamupr.mp4'
+import Map from '../Map'
 
 export default function About() {
   return (
@@ -18,6 +19,7 @@ export default function About() {
       <div id='about-splash'>
         <div className='splash-text'>
           <h1>WHY JEREMY GAY</h1>
+          <Map />
 
           {/* <p> hello hello hello</p> */}
         </div>

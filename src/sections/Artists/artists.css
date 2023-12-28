@@ -105,10 +105,17 @@
   /* border: 1px solid blue; */
   height: 100%;
   width: 100%;
-  position: relative;
-
-
+  /* position: relative; */
+  
+  
 }
+
+input:not(:checked) + label .artistName-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .artistName {
   /* border: 1px solid red; */
   transform: rotate(270deg);
@@ -166,8 +173,8 @@ input:checked + label .artistName {
 input:not(:checked) + label .artistName {
   transition-delay: .3s;
   transition: all .3s ease;
-  position: relative;
-  top: 75%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 

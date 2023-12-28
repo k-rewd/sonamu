@@ -31,7 +31,7 @@ export default function Artists() {
                 </div>
               </div>
 
-              <div className='row'>
+              {/* <div className='row'>
                 <div className='icon'>1</div>
                 <div className='description'>
                   <h4>@AB</h4>
@@ -39,7 +39,7 @@ export default function Artists() {
                 </div>
 
 
-              </div>
+              </div> */}
             </label>
 
 
