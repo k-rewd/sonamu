@@ -1,18 +1,17 @@
 import './artists.css'
 
 export default function Artists() {
-  const abArt = ['1','2','3','4','5','6','7','8']
-  const bonesArt = ['1','2','3','4','5','6','7','8']
-  const grayArt = ['1','2','3','4','5','6','7','8']
-  const derekArt = ['1','2','3','4','5','6','7','8']
-  const raeArt = ['1','2','3','4','5','6','7','8']
-  const hazeArt = ['1','2','3','4','5','6','7','8']
+  const abArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const bonesArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const grayArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const derekArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const raeArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const hazeArt = ['1', '2', '3', '4', '5', '6', '7', '8']
 
 
   return (
     <section id='artistsSection'>
       <body id='artist-splash'>
-        <h1>ARTISTS</h1>
         <div className='wrapper'>
           <div className='container'>
             {/* ARTIST 1*/}
@@ -24,7 +23,12 @@ export default function Artists() {
 
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
                   <h1 className='artistName'>AB</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {abArt.map(art => (
@@ -36,7 +40,7 @@ export default function Artists() {
             {/* ARTIST 2*/}
             <input type='radio' name='slide' id='c2' />
             <label for='c2' className='card'>
-            <div className='artist'>
+              <div className='artist'>
                 <div className='artistName-container'>
                   <h1 className='artistName'>BONES</h1>
                 </div>
@@ -50,7 +54,7 @@ export default function Artists() {
             {/* ARTIST 3*/}
             <input type='radio' name='slide' id='c3' />
             <label for='c3' className='card'>
-            <div className='artist'>
+              <div className='artist'>
                 <div className='artistName-container'>
                   <h1 className='artistName'>GRAY</h1>
                 </div>
@@ -64,7 +68,7 @@ export default function Artists() {
             {/* ARTIST 4*/}
             <input type='radio' name='slide' id='c4' />
             <label for='c4' className='card'>
-            <div className='artist'>
+              <div className='artist'>
                 <div className='artistName-container'>
                   <h1 className='artistName'>DEREK</h1>
                 </div>
@@ -78,7 +82,7 @@ export default function Artists() {
             {/* ARTIST 5*/}
             <input type='radio' name='slide' id='c5' />
             <label for='c5' className='card'>
-            <div className='artist'>
+              <div className='artist'>
                 <div className='artistName-container'>
                   <h1 className='artistName'>RAE</h1>
                 </div>
@@ -92,7 +96,7 @@ export default function Artists() {
             {/* ARTIST 6*/}
             <input type='radio' name='slide' id='c6' />
             <label for='c6' className='card'>
-            <div className='artist'>
+              <div className='artist'>
                 <div className='artistName-container'>
                   <h1 className='artistName'>HAZE</h1>
                 </div>
