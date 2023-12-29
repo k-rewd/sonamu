@@ -6,7 +6,7 @@
 
 #artistsSection {
   /* height: 100vh; */
-  background-color:whitesmoke;
+  background-color:rgb(66, 66, 66);
   display: flex;
   justify-content: center;
   
@@ -15,7 +15,7 @@
 }
 
 #artist-splash {
-  background-color: rgba(104, 104, 104, 0.2);
+  background-color: rgba(160, 160, 160, 0.2);
   height: 80vh;
   width: 100%;
   margin-top: 150px;
@@ -102,7 +102,7 @@
 }
 
 .artistName-container {
-  /* border: 1px solid blue; */
+  
   height: 100%;
   width: 100%;
   /* position: relative; */
@@ -121,21 +121,26 @@ input:not(:checked) + label .artistName-container {
 .artistName {
   /* border: 1px solid red; */
   transform: rotate(270deg);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: rgba(255, 255, 255, 0.4);
-
+  /* border: 1px solid red; */
+  background-color: rgba(83, 83, 83, 0.37);
+  padding: 0 1rem;
 }
 .artist-images {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   overflow-y: scroll;
   background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 0 25px 25px 0;
 }
 
 .art {
-  border: 1px solid blue;
+  border: 1px solid white;
   height: 50%;
+  margin:10px;
+  border-radius: 5px;
 }
 
 input:not(:checked) + label .artist-images {
