@@ -20,7 +20,7 @@ export default function App() {
         <About />
 
         <Artists />
-        <Gallery />
+        {/* <Gallery /> */}
         <Aftercare />
         <Contact />
       </body>

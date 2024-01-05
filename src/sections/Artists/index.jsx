@@ -7,6 +7,9 @@ export default function Artists() {
   const derekArt = ['1', '2', '3', '4', '5', '6', '7', '8']
   const raeArt = ['1', '2', '3', '4', '5', '6', '7', '8']
   const hazeArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const chonnyArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+  const yongArt = ['1', '2', '3', '4', '5', '6', '7', '8']
+
 
 
   return (
@@ -42,7 +45,13 @@ export default function Artists() {
             <label for='c2' className='card'>
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
                   <h1 className='artistName'>BONES</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {bonesArt.map(art => (
@@ -56,7 +65,13 @@ export default function Artists() {
             <label for='c3' className='card'>
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
                   <h1 className='artistName'>GRAY</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {grayArt.map(art => (
@@ -70,7 +85,13 @@ export default function Artists() {
             <label for='c4' className='card'>
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
                   <h1 className='artistName'>DEREK</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {derekArt.map(art => (
@@ -84,7 +105,13 @@ export default function Artists() {
             <label for='c5' className='card'>
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
                   <h1 className='artistName'>RAE</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {raeArt.map(art => (
@@ -98,10 +125,56 @@ export default function Artists() {
             <label for='c6' className='card'>
               <div className='artist'>
                 <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
                   <h1 className='artistName'>HAZE</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
                 </div>
                 <div className='artist-images'>
                   {hazeArt.map(art => (
+                    <div className='art'>{art}</div>
+                  ))}
+                </div>
+              </div>
+            </label>
+            {/* ARTIST 7*/}
+            <input type='radio' name='slide' id='c7' />
+            <label for='c7' className='card'>
+              <div className='artist'>
+                <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
+                  <h1 className='artistName'>YONG</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
+                </div>
+                <div className='artist-images'>
+                  {chonnyArt.map(art => (
+                    <div className='art'>{art}</div>
+                  ))}
+                </div>
+              </div>
+            </label>
+            {/* ARTIST 8*/}
+            <input type='radio' name='slide' id='c8' />
+            <label for='c8' className='card'>
+              <div className='artist'>
+                <div className='artistName-container'>
+                  <div className='fillerxD'></div>
+
+                  <h1 className='artistName'>CHONNY</h1>
+                  <div className='ig'>
+                    <i className="fa-brands fa-instagram"></i>
+                    <h4>@blab_la</h4>
+                  </div>
+                </div>
+                <div className='artist-images'>
+                  {yongArt.map(art => (
                     <div className='art'>{art}</div>
                   ))}
                 </div>
