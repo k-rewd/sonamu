@@ -2,7 +2,6 @@
 export default function Map() {
   return(
     <div>
-      <h1>Map</h1>
       <div className='info'>
           <li>3921 W. 6th street. Koreantown, los Angeles</li>
           {/* <li>sonamu.tattoo@gmail.com</li> */}

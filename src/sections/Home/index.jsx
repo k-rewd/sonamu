@@ -17,7 +17,7 @@ export default function Home() {
       <div className='splash'>
         <div className='splash-text'>
 
-          <h1>WHY JEREMY GAY</h1>
+          <h1>JEREMY IS GAY</h1>
         </div>
         <div className='logo-seal'>
           <img className='logoimage2' src={logoimage2} />

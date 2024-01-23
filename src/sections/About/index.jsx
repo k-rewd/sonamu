@@ -18,7 +18,8 @@ export default function About() {
       </div>
       <div id='about-splash'>
         <div className='splash-text'>
-          <h1>WHY JEREMY GAY</h1>
+          <h1>full name, phone number, concept, placement, sizing, color/black+gray, reference photos</h1>
+          
           <Map />
 
           {/* <p> hello hello hello</p> */}

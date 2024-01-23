@@ -8,7 +8,7 @@ export default function Navbar() {
   const navLinkKrn = ['소나무', '아티스트', '갤러리', '애프터케어', '연락처']
   const krnFontStyle = {
     // fontStyle: 'italic',
-    fontFamily: 'Dokdo',
+    fontFamily: 'Single Day',
     fontSize: '25px',
     margin:'0',
     padding:'0'

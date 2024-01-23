@@ -202,7 +202,7 @@ input:not(:checked) + label .artistName {
 
 }
 .card[for='c3'] {
-  background-image: url('../../assets/gray1.jpg');
+  background-image: url('../../assets/gray.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
