@@ -25,7 +25,7 @@
 }
 
 .aftercare-instructions {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 75%;
   padding:20px;
   display: flex;

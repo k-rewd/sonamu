@@ -1,5 +1,12 @@
 import React from 'react'
 import './contact.css'
+import Carousel from '../carousel'
+import img1 from '../../assets/AB.png'
+import img2 from '../../assets/ab1.jpg'
+import img3 from '../../assets/bones.jpg'
+import img4 from '../../assets/derek.jpg'
+import img5 from '../../assets/gray.jpg'
+
 
 export default function Contact() {
 
@@ -14,18 +21,29 @@ export default function Contact() {
   }
   // 240123-02-7782
 
+  const images = [img1, img2, img3, img4, img5]
+
   return (
     <section id='contactSection'>
-      <div className='contact-splash'>
+      {/* <div className='contact-splash'>
         <div className='email'>
           <div>full name, phone number, concept, placement, sizing, color/black+gray, reference photos </div>
           <button onClick={handleClick}>
             BOOK CONSULTATION
           </button>
         </div>
-
+      </div> */}
+      <div
+        style={{
+          maxWidth: '1200px',
+          width: '100%',
+          aspectRatio: '10 / 6',
+          margin: '0 auto',
+        }}>
+        <Carousel imageUrls={images} />
       </div>
 
     </section>
+
   )
 }
