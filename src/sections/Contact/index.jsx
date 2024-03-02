@@ -21,7 +21,13 @@ export default function Contact() {
   }
   // 240123-02-7782
 
-  const images = [img1, img2, img3, img4, img5]
+  const IMAGES = [
+    {url: img1, alt: ''},
+    {url: img2, alt: ''},
+    {url: img3, alt: ''},
+    {url: img4, alt: ''},
+    {url: img5, alt: ''},
+  ]
 
   return (
     <section id='contactSection'>
@@ -40,7 +46,7 @@ export default function Contact() {
           aspectRatio: '10 / 6',
           margin: '0 auto',
         }}>
-        <Carousel imageUrls={images} />
+        <Carousel images={IMAGES} />
       </div>
 
     </section>
