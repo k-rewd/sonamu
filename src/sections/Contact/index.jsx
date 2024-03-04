@@ -1,6 +1,6 @@
 import React from 'react'
 import './contact.css'
-import Carousel from '../carousel'
+import Carousel from '../Components/Carousel/carousel'
 import img1 from '../../assets/AB.png'
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
@@ -39,7 +39,7 @@ export default function Contact() {
           </button>
         </div>
       </div> */}
-      <div
+      {/* <div
         style={{
           maxWidth: '1200px',
           width: '100%',
@@ -47,6 +47,9 @@ export default function Contact() {
           margin: '0 auto',
         }}>
         <Carousel images={IMAGES} />
+      </div> */}
+      <div>
+        
       </div>
 
     </section>
