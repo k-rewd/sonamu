@@ -212,6 +212,39 @@ const artistsData = [
   // ... add similar entries for other artists
 ];
 
+const CarouselModal = ({ isOpen, handleClose, artist }) => {
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const showPrevImage = () => {
+    setImageIndex(index => {
+      if (index === 0) return artist.art.length - 1;
+      return index - 1
+    })
+  }
+
+  const showNextImage = () => {
+    setImageIndex(index => {
+      if (index === artist.art.length) return 0;
+      return index + 1
+    })
+  }
+  return (
+    isOpen && (
+      <div className='modal'>
+        <div>
+          <span className='close' onClick={handleClose}>&times;</span>
+          <div className='carousel'>
+            <button onClick={showPrevImage}>&lt;</button>
+            <div>{artist.art[imageIndex]}</div>
+            <button onClick={showNextImage}>&gt;</button>
+          </div>
+        </div>
+      </div>
+    )
+  )
+
+}
+
 export default function Artists() {
   return (
     <section id='artistsSection'>
