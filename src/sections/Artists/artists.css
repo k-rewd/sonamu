@@ -175,6 +175,13 @@ input:not(:checked) + label .artist-name {
   top:50%;
   left: 50%;
   color: white;
+  font-size: 20px;
+}
+
+.view-art-button:hover {
+  /* transform: scale(1.1); */
+  /* scale: 1.1; */
+  text-shadow: 0 0 20px white;
 }
 
 .artist-info {
@@ -222,6 +229,11 @@ input:not(:checked) + label h4 {
 
 .artist-ig > i {
   cursor: pointer;
+}
+
+.artist-ig > i:hover {
+  scale: 1.01;
+  text-shadow: 0 0 20px white;
 }
 
 .fa-instagram {

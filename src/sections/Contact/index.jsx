@@ -39,7 +39,7 @@ export default function Contact() {
           </button>
         </div>
       </div> */}
-      {/* <div
+      <div
         style={{
           maxWidth: '1200px',
           width: '100%',
@@ -47,7 +47,7 @@ export default function Contact() {
           margin: '0 auto',
         }}>
         <Carousel images={IMAGES} />
-      </div> */}
+      </div>
       <div>
         
       </div>
