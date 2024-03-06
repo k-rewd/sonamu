@@ -208,8 +208,47 @@ import './artists.css';
 import { useState } from 'react';
 
 const artistsData = [
-  { name: 'AB', art: ['1', '2', '3', '4', '5', '6', '7', '8'], ig: '@blab_la' },
-  { name: 'BONES', art: ['1', '2', '3', '4', '5'], ig: '@lala_la' },
+  {
+    name: 'AB',
+    art: ['1', '2', '3', '4', '5', '6', '7', '8'],
+    ig: '@blab_la'
+  },
+  {
+    name: 'BONES',
+    art: ['1', '2', '3', '4', '5'],
+    ig: '@lala_la'
+  },
+  {
+    name: 'GRAY',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+  {
+    name: 'DEREK',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+  {
+    name: 'RAE',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+  {
+    name: 'HAZE',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+  {
+    name: 'CHONNY',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+  {
+    name: 'YONG',
+    art: ['1', '2', '3'],
+    ig: '@lalala'
+  },
+
   // ... add similar entries for other artists
 ];
 
@@ -271,11 +310,11 @@ export default function Artists() {
               <div key={index}>
                 <input type='radio' name='slide' id={`c${index + 1}`} />
                 <label htmlFor={`c${index + 1}`} className='card'>
+                  <button className='view-art-button' onClick={() => openModal(artist)}>&#91; VIEW ART &#93;</button>
                   <div className='artist'>
                     {/* <div className='artistName-container'> */}
                     <div className='artist-info'>
                       <h1 className='artist-name'>{artist.name}</h1>
-                      <button className='view-art-button' onClick={() => openModal(artist)}>&#91; VIEW ART &#93;</button>
                       <div className='artist-ig'>
                         <i className="fa-brands fa-instagram"></i>
                         {/* <h4>{artist.ig}</h4> */}
