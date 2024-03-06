@@ -259,7 +259,7 @@ export default function Artists() {
   const closeModal = () => {
     setCurrentArtist(null);
     setModal(false);
-  }  
+  }
 
   return (
     <section id='artistsSection'>
@@ -269,23 +269,24 @@ export default function Artists() {
 
             {artistsData.map((artist, index) => (
               <div key={index}>
-                <button onClick={() => openModal(artist)}>View Art</button>
                 <input type='radio' name='slide' id={`c${index + 1}`} />
                 <label htmlFor={`c${index + 1}`} className='card'>
                   <div className='artist'>
-                    <div className='artistName-container'>
-                      <div className='fillerxD'></div>
-                      <h1 className='artistName'>{artist.name}</h1>
-                      <div className='ig'>
+                    {/* <div className='artistName-container'> */}
+                    <div className='artist-info'>
+                      <h1 className='artist-name'>{artist.name}</h1>
+                      <button className='view-art-button' onClick={() => openModal(artist)}>&#91; VIEW ART &#93;</button>
+                      <div className='artist-ig'>
                         <i className="fa-brands fa-instagram"></i>
-                        <h4>{artist.ig}</h4>
+                        {/* <h4>{artist.ig}</h4> */}
                       </div>
                     </div>
-                    <div className='artist-images'>
+                    {/* </div> */}
+                    {/* <div className='artist-images'>
                       {artist.art.map((art, artIndex) => (
                         <div key={artIndex} className='art'>{art}</div>
                       ))}
-                    </div>
+                    </div> */}
                   </div>
                 </label>
               </div>
@@ -294,7 +295,7 @@ export default function Artists() {
           </div>
         </div>
       </body>
-      <CarouselModal isOpen={modal} handleClose={closeModal} artist={currentArtist}/>
+      <CarouselModal isOpen={modal} handleClose={closeModal} artist={currentArtist} />
     </section>
   );
 }

@@ -31,6 +31,76 @@
   min-width: 300px;
 }
 
+
+
+.wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid red;
+
+  height: 80vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+
+  width:90px;
+  height: 90%;
+  border-radius: .75rem;
+  background-size: cover;
+  
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end; /* might remove */
+  align-items: flex-start; /* might remove */
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+
+/* .card > .row {
+  color:white;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid red;
+} */
+
+/* .card > .row > .icon {
+  background: #223;
+  color:white;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:15px;
+} */
+
+/* .card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+} */
+
 #artistsSection {
   /* height: 100vh; */
   background-color:rgb(66, 66, 66);
@@ -48,121 +118,91 @@
   margin-top: 150px;
 
 }
-
-.wrapper {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-
-  height: 70vh;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-}
-
-.card {
-
-  /* border: 1px solid red; */
-
-  width:90px;
-  border-radius: .75rem;
-  background-size: cover;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 2rem;
-  margin: 0 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-end;
-  align-items: flex-start;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-}
-
-
-.card > .row {
-  color:white;
-  display: flex;
-  flex-wrap: nowrap;
-  /* border: 1px solid red; */
-
-  
-}
-
-.card > .row > .icon {
-  background: #223;
-  color:white;
-  border-radius: 50%;
-  height: 65px;
-  width: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:15px;
-}
-
-.card > .row > .description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  height: 80px;
-  width: 520px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition-delay: .3s;
-  transition: all .3s ease;
-}
 .artist {
-  /* border: 1px solid red; */
+  border: 1px solid blue;
   background-color: rgba(104, 104, 104, 0.2);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
-  padding: 20px;
-
 }
 
-.artistName-container {
-  /* border: 1px solid red; */
-  
-  /* height: 100%; */
+/* .artist-name-container {
+  border: 1px solid red;
+
   width: 100%;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   
+} */
+
+input:not(:checked) + .card {
+  cursor: pointer;
 }
 
-input:not(:checked) + label .artistName-container {
+input:not(:checked) + label .artist-name {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.artistName {
-  /* border: 1px solid red; */
-  transform: rotate(270deg);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.4);
-  /* border: 1px solid red; */
-  background-color: rgba(83, 83, 83, 0.37);
-  padding: 0 1rem;
-}
-.artist-images {
-  /* border: 1px solid red; */
+/* .artist-images {
+  
   width: 50%;
   overflow-y: scroll;
   background-color: rgba(255, 255, 255, 0.459);
   border-radius: 0 25px 25px 0;
+} */
+
+
+.artist-name {
+  /* border: 1px solid red; */
+  transform: rotate(270deg);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.788);
+  /* border: 1px solid red; */
+}
+
+.view-art-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.artist-info {
+  width: 100%;
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(83, 83, 83, 0.37);
+  color: white;
+}
+
+
+
+
+
+input:not(:checked) + label .view-art-button,
+input:not(:checked) + label .artist-ig,
+input:not(:checked) + label h4 {
+  display: none;
+}
+
+.artist-ig {
+  display: flex;
+  align-items:center;  
+  
+  gap: 1rem;
+}
+
+.artist-ig > i {
+  cursor: pointer;
+}
+
+.fa-instagram {
+  font-size: 50px;
 }
 
 .art {
@@ -171,8 +211,6 @@ input:not(:checked) + label .artistName-container {
   margin:10px;
   border-radius: 5px;
 }
-
-
 
 input:not(:checked) + label .artist-images {
   display: none;
@@ -196,19 +234,19 @@ input:checked + label {
   width: 1200px;
 }
 
-input:checked + label .description {
+/* input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
   
-}
+} */
 
-input:checked + label .artistName {
+input:checked + label .artist-name {
   transform: translateX(0);
   transition-delay: .3s;
   transition: all .3s ease;
 }
 
-input:not(:checked) + label .artistName {
+input:not(:checked) + label .artist-name {
   transition-delay: .3s;
   transition: all .3s ease;
   display: flex;
@@ -244,34 +282,8 @@ input:not(:checked) + label .artistName {
   background-repeat: no-repeat;
 }
 
-.fillerxD {
-  height: 20%;
-}
 
-.ig {
-  padding-left: 1em;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
 
-.ig > h4 {
-  font-size: 25px;
-  font-style: italic;
-  color: white;
-}
-
-input:not(:checked) + label .ig {
-  display: none;
-}
-input:not(:checked) + label .fillerxD {
-  display: none;
-}
-
-.fa-instagram {
-  color: white;
-  font-size: 50px;
-}
 
 @media only screen and (max-width: 768px) {
   #artist-splash {
@@ -301,7 +313,7 @@ input:not(:checked) + label .fillerxD {
     width: 100%; /* Full width for description on mobile */
   }
 
-  .artistName {
+  .artist-name {
     font-size: 40px; /* Adjust font size for mobile */
   }
 
@@ -314,7 +326,7 @@ input:not(:checked) + label .fillerxD {
     display: none; /* Hide filler on mobile */
   }
 
-  .ig > h4 {
+  .artist-info > h4 {
     font-size: 20px; /* Adjust font size for mobile */
   }
 
