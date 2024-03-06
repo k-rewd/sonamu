@@ -10,8 +10,8 @@ export default function Navbar() {
     // fontStyle: 'italic',
     fontFamily: 'Single Day',
     fontSize: '25px',
-    margin:'0',
-    padding:'0'
+    margin: '0',
+    padding: '0'
   }
 
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -55,6 +55,9 @@ export default function Navbar() {
       <nav>
         {navLinks.map((nav, index) => renderNavLinks(nav, index))}
       </nav>
+      <div className='footer'>
+        <h3>krewd.com@gmail.com</h3>
+      </div>
     </div>
   )
 }
