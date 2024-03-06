@@ -178,7 +178,7 @@ input:not(:checked) + label .artist-name {
 }
 
 .artist-info {
-  padding: 0 1em;
+  padding: 0 5em 0 1em;
   width: 100%;
   display: flex;
   justify-content: space-between;
