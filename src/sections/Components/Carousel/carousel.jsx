@@ -70,7 +70,7 @@ export default function Carousel({ images }) {
             className="carousel-dot-btn"
             aria-label={`View Image ${index + 1}`}
             onClick={() => setImageIdx(index)}
-          >
+            >
             {index === imageIdx ? <CircleDot aria-hidden /> : <Circle />}
           </button>
         ))}

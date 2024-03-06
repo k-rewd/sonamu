@@ -1,5 +1,6 @@
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react';
 import './artists.css';
+import '../Components/Carousel/carousel.css'
 import { useState } from 'react';
 
 import img1 from '../../assets/AB.png'
@@ -16,7 +17,7 @@ const artistsData = [
   },
   {
     name: 'BONES',
-    art: [img5, '2', '3', '4', '5'],
+    art: [img5, '2'],
     ig: '@lala_la'
   },
   {
@@ -77,11 +78,12 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
           style={{
             maxWidth: '1200px',
             width: '100%',
-            aspectRatio: '10 / 6',
+            aspectRatio: '16 / 9',
             margin: '0 auto',
           }}
         >
-          <span className='close' onClick={handleClose}>&times;</span>
+          {/* <span className='close' onClick={handleClose}>&times;</span> */}
+          <section style={{ width: '100%', height: '100%', position: 'relative'}}>
           <div className='carousel'
             style={{
               width: '100%',
@@ -89,44 +91,44 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
               display: 'flex',
               overflow: 'hidden'
             }}>
-
-
+              {artist.art.map(art  => (
             <img
               className="carousel-img"
-              src={artist.art[imageIndex]}
+              key={art}
+              src={art}
               style={{ translate: `${-100 * imageIndex}%` }}
             />
+              ))}
 
-
-            <button onClick={showPrevImage}
-              className="carousel-btn"
-              style={{ left: 0 }}
-            ><ArrowBigLeft /></button>
-            <button onClick={showNextImage}
-              className="carousel-btn"
-              style={{ right: 0 }}
-            ><ArrowBigRight />
-            </button>
-            <div
-              style={{
-                position: 'absolute',
-                bottom: '.5rem',
-                left: '50%',
-                translate: '-50%',
-                display: 'flex',
-                gap: '.25rem',
-              }}
-            >
-              {artistsData.map((_, index) => (
-                <button
+          </div>
+          <button onClick={showPrevImage}
+            className="carousel-btn"
+            style={{ left: 0 }}
+          ><ArrowBigLeft /></button>
+          <button onClick={showNextImage}
+            className="carousel-btn"
+            style={{ right: 0 }}
+          ><ArrowBigRight />
+          </button>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '.5rem',
+              left: '50%',
+              translate: '-50%',
+              display: 'flex',
+              gap: '.25rem',
+            }}
+          >
+            {artist.art.map((_, index) => (
+              <button
                 key={index}
                 className='carousel-dot-btn'
                 onClick={() => setImageIndex(index)}
-                >{index === imageIndex ? <CircleDot/> : <Circle/>}</button>
-              ))}
-
-            </div>
+              >{index === imageIndex ? <CircleDot /> : <Circle />}</button>
+            ))}
           </div>
+          </section>
         </div>
       </div>
     )
