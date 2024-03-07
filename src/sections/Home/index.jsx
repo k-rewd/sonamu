@@ -18,10 +18,13 @@ export default function Home() {
 
       </div>
       <div className='splash'>
-        <div className='splash-text'>
-
-          {/* <h1>JEREMY IS GAY</h1> */}
-          {/* <h1>full name, phone number, concept, placement, sizing, color/black+gray, reference photos</h1> */}
+        <div className='splash-left'>
+          <div className='map-info'>
+            <h2>3921 W. 6th street</h2>
+            <h1>koreatown</h1>
+            <h3>los angeles</h3>
+          </div>
+          <h4>walk-ins welcome 12pm - 6pm</h4>
           <Map />
         </div>
         <div className='logo-seal'>
@@ -33,4 +36,6 @@ export default function Home() {
     </section>
   )
 }
+{/* <li>sonamu.tattoo@gmail.com</li> */ }
+{/* <h1>full name, phone number, concept, placement, sizing, color/black+gray, reference photos</h1> */ }
 

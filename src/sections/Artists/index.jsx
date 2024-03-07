@@ -3,6 +3,10 @@ import './artists.css';
 import '../Components/Carousel/carousel.css'
 import { useState } from 'react';
 
+
+import sonamupr from '../../assets/sonamupr.mp4'
+
+
 import img1 from '../../assets/AB.png'
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
@@ -83,51 +87,51 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
           }}
         >
           {/* <span className='close' onClick={handleClose}>&times;</span> */}
-          <section style={{ width: '100%', height: '100%', position: 'relative'}}>
-          <div className='carousel'
-            style={{
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              overflow: 'hidden'
-            }}>
-              {artist.art.map(art  => (
-            <img
-              className="carousel-img"
-              key={art}
-              src={art}
-              style={{ translate: `${-100 * imageIndex}%` }}
-            />
+          <section style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <div className='carousel'
+              style={{
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                overflow: 'hidden'
+              }}>
+              {artist.art.map(art => (
+                <img
+                  className="carousel-img"
+                  key={art}
+                  src={art}
+                  style={{ translate: `${-100 * imageIndex}%` }}
+                />
               ))}
 
-          </div>
-          <button onClick={showPrevImage}
-            className="carousel-btn"
-            style={{ left: 0 }}
-          ><ArrowBigLeft /></button>
-          <button onClick={showNextImage}
-            className="carousel-btn"
-            style={{ right: 0 }}
-          ><ArrowBigRight />
-          </button>
-          <div
-            style={{
-              position: 'absolute',
-              bottom: '.5rem',
-              left: '50%',
-              translate: '-50%',
-              display: 'flex',
-              gap: '.25rem',
-            }}
-          >
-            {artist.art.map((_, index) => (
-              <button
-                key={index}
-                className='carousel-dot-btn'
-                onClick={() => setImageIndex(index)}
-              >{index === imageIndex ? <CircleDot /> : <Circle />}</button>
-            ))}
-          </div>
+            </div>
+            <button onClick={showPrevImage}
+              className="carousel-btn"
+              style={{ left: 0 }}
+            ><ArrowBigLeft /></button>
+            <button onClick={showNextImage}
+              className="carousel-btn"
+              style={{ right: 0 }}
+            ><ArrowBigRight />
+            </button>
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '.5rem',
+                left: '50%',
+                translate: '-50%',
+                display: 'flex',
+                gap: '.25rem',
+              }}
+            >
+              {artist.art.map((_, index) => (
+                <button
+                  key={index}
+                  className='carousel-dot-btn'
+                  onClick={() => setImageIndex(index)}
+                >{index === imageIndex ? <CircleDot /> : <Circle />}</button>
+              ))}
+            </div>
           </section>
         </div>
       </div>
@@ -139,6 +143,7 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
 export default function Artists() {
   const [currentArtist, setCurrentArtist] = useState(null);
   const [modal, setModal] = useState(false);
+  const [checked, unChecked] = useState(null)
 
   const openModal = (artist) => {
     setCurrentArtist(artist);
@@ -152,13 +157,20 @@ export default function Artists() {
 
   return (
     <section id='artistsSection'>
+      {/* <div className='videoBackground'>
+        <video src={sonamupr} autoPlay loop muted />
+      </div> */}
       <body id='artist-splash'>
         <div className='wrapper'>
           <div className='container'>
 
             {artistsData.map((artist, index) => (
               <div key={index}>
-                <input type='radio' name='slide' id={`c${index + 1}`} />
+                <input 
+                type='radio' 
+                name='slide' 
+                id={`c${index + 1}`} 
+                />
                 <label htmlFor={`c${index + 1}`} className='card'>
                   <button className='view-art-button' onClick={() => openModal(artist)}>&#91;  V I E W  &#183; A R T &#93;</button>
                   <div className='artist'>

@@ -15,12 +15,12 @@ export default function Aftercare() {
               <li>Wash and reapply ointment in the morning and night, and periodically throughout the day as it dries out</li>
             </ul>
             {/* <img id='imageAB'src={flash1}/> */}
-            <div id='ac-sign-container'>
+            {/* <div id='ac-sign-container'>
             <h1 id='afterCare-sign'>AFTERCARE</h1>
-            </div>
+            </div> */}
           </div>
           <div id='sectionCD'>
-            <img id='imageCD' src={flash2} />
+            {/* <img id='imageCD' src={flash2} /> */}
             <ul id='aftercare2'>
               <li>Take a break from any strenuous exercise to avoid trapping sweat inside the bandage</li>
               <li>After one week, switch to using an unscented moisturizing lotion for the next three weeks</li>
