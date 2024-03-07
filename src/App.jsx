@@ -17,7 +17,7 @@ export default function App() {
 
       <body>
         <Home />
-        <About />
+        {/* <About /> */}
 
         <Artists />
         {/* <Gallery /> */}
