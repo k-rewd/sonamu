@@ -5,6 +5,9 @@ import flash2 from '../../assets/flash1.png'
 export default function Aftercare() {
   return (
     <section id='aftercareSection'>
+      {/* <div className='fbox-1'></div>
+      <div className='fbox-2'></div>
+      <div className='fbox-3'></div> */}
       <div className='aftercare-splash'>
         <div className='aftercare-instructions'>
           <div id='sectionAB'>
@@ -19,16 +22,16 @@ export default function Aftercare() {
           </div>
           <div id='sectionCD'>
             <div id='aftercare2'>
-              <div className='do-card'>
-                <h2>DO</h2>
-                <ul className='do-card-info'>
+              <div className='do-box'>
+                <div className='do-title'><h2>DO</h2></div>
+                <ul className='do-info'>
                   <li>Take a break from any strenuous exercise to avoid trapping sweat inside the bandage</li>
                   <li>Wear clean, loose fitting clothing around your tattoo</li>
                 </ul>
               </div>
-              <div className='dont-card'>
-                <h2>DONT</h2>
-                <ul className='dont-card-info'>
+              <div className='dont-box'>
+                <div className='dont-title'><h2>DON'T</h2></div>
+                <ul className='dont-info'>
                   <li>For three weeks - Avoid baths, pools, saunas, hot tubs, oceans, tanning beds, and direct sun exposure</li>
                   <li>Do not pick, itch, scratch, or shave over your healing tattoo</li>
                 </ul>
@@ -41,4 +44,6 @@ export default function Aftercare() {
     </section>
   )
 }
+
+
 

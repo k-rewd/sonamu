@@ -2,18 +2,25 @@
   /* height: 100vh; */
   background-color: gray;
 
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 
 }
 
+
+.fbox-1 {
+  position: relative;
+  top: 20%;
+  border: 1px solid white;
+  width: 50%;
+}
+
 .aftercare-splash {
-  border: 1px solid blue;
   background-color: rgba(104, 104, 104, 0.2);
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   position: relative;
-  top: 10%;
+  top: 150px;
 
   display: flex;
   justify-content: center;
@@ -22,7 +29,6 @@
 }
 
 .aftercare-instructions {
-  border: 1px solid red;
   width: 100%;
 
   padding: 2em;
@@ -33,23 +39,32 @@
 }
 
 #sectionAB {
-  border: 1px solid red;
-  height: 60%;
+  height: 45%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
   
+}
+
+#sectionAB > h1 {
   font-size: 10em;
+  text-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(70,70,70,0.12);
+  
 }
 
 #sectionCD {
-  border: 1px solid red;
 
-  height: 50%;
+  height: 55%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  font-size: 15em;
+}
 
+#sectionCD > h1 {
+  font-size: 15em;
+  text-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(70,70,70,0.12);
 }
 
 #aftercare1 {
@@ -57,48 +72,75 @@
   /* padding: 50px 0; */
   /* font-family:Arial, Helvetica, sans-serif; */
   font-size: 20px;
-
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap:.2em;
+  gap: 1em;
 }
 
 #aftercare2 {
-  /* border: 1px solid red; */
   font-size: 20px;
   display: flex;
   height: 100%;
-
-}
-
-.do-card {
-  height: 100%;
-
   width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  height: 75%;
+  gap: 1em;
+
 }
 
-.do-card > h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.do-card-info {
-display: flex;
-}
-
-.dont-card {
+.do-box {
   width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  border: 1px solid white;
+  width: 40%;
 
 }
 
-.dont-card-info {
+.do-title {
+  height: 20%;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.do-info {
+  height: 80%;
+  display: flex;
+}
+
+.do-info > li {
+  width: 50%;
+  padding: 1em;
+  border: 1px solid white;
+}
+
+.dont-box {
+  width: 50%;
+  border: 1px solid white;
+  width: 40%;
+}
+
+.dont-title {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+
+}
+
+.dont-info {
+  height: 80%;
+
+  display: flex;
+
+}
+
+.dont-info > li {
+  width: 50%;
+  padding: 1em;
+  border: 1px solid white;
 
 }
