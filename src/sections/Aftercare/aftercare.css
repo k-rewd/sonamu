@@ -16,6 +16,7 @@
 }
 
 .aftercare-splash {
+
   background-color: rgba(104, 104, 104, 0.2);
   width: 100%;
   height: 75vh;
@@ -29,24 +30,27 @@
 }
 
 .aftercare-instructions {
+
   width: 100%;
 
   padding: 2em;
   display: flex;
-  flex-direction: column;
+
   justify-content: space-around;
   color: white;
 }
 
 #sectionAB {
-  height: 45%;
+
+  width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   
 }
 
-#sectionAB > h1 {
+.after-title-container {
   font-size: 10em;
   text-shadow: -10px -10px 15px rgba(255,255,255,0.5),
   10px 10px 15px rgba(70,70,70,0.12);
@@ -55,10 +59,13 @@
 
 #sectionCD {
 
-  height: 55%;
+
+  width: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+
 }
 
 #sectionCD > h1 {
@@ -67,30 +74,25 @@
   10px 10px 15px rgba(70,70,70,0.12);
 }
 
-#aftercare1 {
-  /* border: 1px solid red; */
+#aftercare2 {
   /* padding: 50px 0; */
   /* font-family:Arial, Helvetica, sans-serif; */
   font-size: 20px;
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
 }
 
-#aftercare2 {
+#aftercare1 {
   font-size: 20px;
   display: flex;
-  height: 100%;
-  width: 50%;
-  height: 75%;
+  justify-content: center;
   gap: 1em;
 
 }
 
 .do-box {
-  width: 50%;
   border: 1px solid white;
   width: 40%;
 
@@ -117,7 +119,6 @@
 }
 
 .dont-box {
-  width: 50%;
   border: 1px solid white;
   width: 40%;
 }
