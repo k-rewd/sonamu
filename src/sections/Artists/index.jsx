@@ -1,4 +1,4 @@
-import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react';
+import { ArrowBigLeft, ArrowBigRight, ChevronLeft, ChevronRight, Circle, CircleDot } from 'lucide-react';
 import './artists.css';
 import '../Components/Carousel/carousel.css'
 import { useState } from 'react';
@@ -107,12 +107,12 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
             </div>
             <button onClick={showPrevImage}
               className="carousel-btn"
-              style={{ left: 0 }}
-            ><ArrowBigLeft /></button>
+              style={{ left: 0}}
+            ><ChevronLeft size={169}/></button>
             <button onClick={showNextImage}
               className="carousel-btn"
               style={{ right: 0 }}
-            ><ArrowBigRight />
+            ><ChevronRight />
             </button>
             <div
               style={{
