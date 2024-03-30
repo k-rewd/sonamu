@@ -8,7 +8,7 @@ export default function Navbar() {
   const navLinkKrn = ['소나무', '아티스트', '갤러리', '애프터케어', '연락처']
   const krnFontStyle = {
     // fontStyle: 'italic',
-    fontFamily: 'Single Day',
+    fontFamily: 'Nanum Brush Script',
     fontSize: '25px',
     margin: '0',
     padding: '0'
@@ -56,7 +56,7 @@ export default function Navbar() {
         {navLinks.map((nav, index) => renderNavLinks(nav, index))}
       </nav>
       <div className='footer'>
-        <h3>krewd.com@gmail.com</h3>
+        <h3>ipsum ipsum ipsum</h3>
       </div>
     </div>
   )
