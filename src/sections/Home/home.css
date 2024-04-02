@@ -103,7 +103,7 @@ video {
 }
 
 @media (max-width: 500px) {
-  .splash {
-    color: red;
+  .logo-seal {
+    visibility: hidden;
   }
 }

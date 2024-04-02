@@ -3,3 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+
+@media (max-width: 500px) {
+  .maptest {
+    width:200px;
+  }
+}
