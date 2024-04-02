@@ -11,7 +11,7 @@
 }
 
 .overlay {
-  
+
   position: absolute;
   /* border: 1px solid red; */
   height: 100vh;
@@ -27,7 +27,7 @@
   top: 150px;
   height: 75vh;
   width: 100%;
-  color: white; 
+  color: white;
 
   display: flex;
   justify-content: space-around;
@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
 .map-info {
@@ -51,7 +51,7 @@
 
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  
+
 }
 
 h4 {
@@ -75,7 +75,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+
 
 }
 .logoimage2 {
@@ -100,4 +100,10 @@ video {
   height: 100%;
   object-fit:cover;
   /* background-color: rgba(0,0,0,.5); */
+}
+
+@media (max-width: 500px) {
+  .splash {
+    color: red;
+  }
 }
