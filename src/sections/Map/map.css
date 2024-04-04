@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1900px) {
+  .maptest {
+    width: 500px;
+    height: 275px;
+  }
+}
+
 @media (max-width: 500px) {
   .maptest {
     width:200px;

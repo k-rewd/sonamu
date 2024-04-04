@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
+  width: 50%;
 }
 
 .map-info {
@@ -82,12 +82,12 @@ h2 {
   /* border: 1px solid red; */
 
   filter: invert(1);
-  height: 120px;
+  height: 15%;
 
 }
 .snm-seal {
   /* border: 1px solid red; */
-  height: 150px;
+  height: 15%;
 }
 
 .videoBackground {
@@ -102,8 +102,15 @@ video {
   /* background-color: rgba(0,0,0,.5); */
 }
 
+@media (max-width: 1900px) {
+  .map-info {
+    font-size: 16px;
+  }
+}
+
+
 @media (max-width: 500px) {
-  .logo-seal {
-    visibility: hidden;
+  .logo-seal img {
+    display: none;
   }
 }
