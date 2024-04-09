@@ -113,4 +113,14 @@ video {
   .logo-seal img {
     display: none;
   }
+
+  .splash {
+    /* display: flex; */
+    justify-content: center;
+    
+  }
+
+  .splash-left {
+    width: 100%;
+  }
 }
