@@ -143,7 +143,9 @@ const CarouselModal = ({ isOpen, handleClose, artist }) => {
 export default function Artists() {
   const [currentArtist, setCurrentArtist] = useState(null);
   const [modal, setModal] = useState(false);
-  const [checked, unChecked] = useState(null)
+  const [activeCard, setActiveCard] = useState(null);
+
+  
 
   const openModal = (artist) => {
     setCurrentArtist(artist);
