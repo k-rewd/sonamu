@@ -11,7 +11,7 @@ export default function Home() {
     <section id='sonamuSection'>
       {/* <h1 >HOME</h1> */}
       <div className='videoBackground'>
-        <div className='overlay'></div>
+        {/* <div className='overlay'></div> */}
         <video src={sonamupr} autoPlay loop muted />
         {/* <video src={sonamupr} autoPlay loop muted />
         <video src={sonamupr} autoPlay loop muted /> */}

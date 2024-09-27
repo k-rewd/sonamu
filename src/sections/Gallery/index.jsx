@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 
 import './gallery.css'
+import Carousel from "../Components/Carousel/carousel";
 
 export default function Gallery() {
   const [active, setActive] = useState(3); // Initial active slide
+  const images = ['1', '2','3']
   const items = [
     {
       title: "Slide 1",
@@ -37,28 +39,36 @@ export default function Gallery() {
 
   const loadShow = () => {
     return items.map((_, index) => {
-      if (index === active) {
+      const position = (index - active + items.length) % items.length;
+
+      if (position === 0) {
         return {
           transform: 'none',
-          zIndex: 1,
+          zIndex: 2,
           filter: 'none',
           opacity: 1,
         };
-      } else if (index > active) {
-        const stt = index - active;
+      } else if (position === 1 || position === 2) {
         return {
-          transform: `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`,
-          // zIndex: -stt,
+          transform: `translateX(${220 * position}px) scale(${1 - 0.2 * position}) perspective(60px) rotateY(-1deg)`,
+          zIndex: 1,
           filter: 'blur(5px)',
-          opacity: stt > 2 ? 0 : 0.6,
+          opacity: 0.6,
+        };
+      } else if (position === items.length - 1 || position === items.length - 2) {
+        const adjustedPos = items.length - position;
+        return {
+          transform: `translateX(${-120 * adjustedPos}px) scale(${1 - 0.2 * adjustedPos}) perspective(16px) rotateY(1deg)`,
+          zIndex: 1,
+          filter: 'blur(5px)',
+          opacity: 0.6,
         };
       } else {
-        const stt = active - index;
         return {
-          transform: `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`,
-          // zIndex: -stt,
-          filter: 'blur(5px)',
-          opacity: stt > 2 ? 0 : 0.6,
+          opacity: 0, // Hide other slides
+          zIndex: -1,
+          filter: 'none',
+          transform: 'none',
         };
       }
     });
@@ -69,22 +79,25 @@ export default function Gallery() {
   }, [active]);
 
   const nextSlide = () => {
-    setActive((prevActive) => (prevActive + 1 < items.length ? prevActive + 1 : prevActive));
+    setActive((prevActive) => (prevActive + 1) % items.length);
   };
 
   const prevSlide = () => {
-    setActive((prevActive) => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
+    setActive((prevActive) => (prevActive - 1 + items.length) % items.length);
   };
 
   const styles = loadShow();
 
   return (
     <section id='gallerySection'>
+      
       <div className='slider'>
         {items.map((item, index) => (
           <div className='item' key={index} style={styles[index]}>
-            <h1>{item.title}</h1>
-            <p>{item.content}</p>
+            <h1 id='artistName'>{item.title}</h1>
+            {/* <p>{item.content}</p> */}
+            <Carousel images={images} />
+            
           </div>
         ))}
       </div>
@@ -93,3 +106,7 @@ export default function Gallery() {
     </section>
   );
 };
+
+// transform: `translateX(${220 * position}px) scale(${1 - 0.2 * position}) perspective(60px) rotateY(-1deg)`,
+// transform: `translateX(${-120 * adjustedPos}px) scale(${1 - 0.2 * adjustedPos}) perspective(16px) rotateY(1deg)`,
+
