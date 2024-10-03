@@ -110,18 +110,40 @@ video {
 
 
 @media (max-width: 500px) {
-  .logo-seal img {
-    display: none;
-  }
-
+  
   .splash {
-    /* display: flex; */
-    justify-content: center;
     
+    border: 1px solid red;
+    
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
   }
-
+  
   .splash-left {
     width: 100%;
     border: 1px solid red;
+    padding: 0;
+
+
   }
+  .logo-seal {
+    position: absolute;
+    
+  }
+  
+  .logo-seal img {
+    /* display: none; */
+    border: 1px solid red;
+  
+
+  }
+
+  .logoimage2 {
+    width: 10%;
+  }
+  .snm-seal {
+    width: 10%;
+
+  }
+  
 }

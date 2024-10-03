@@ -96,13 +96,13 @@ export default function Gallery() {
           <div className='item' key={index} style={styles[index]}>
             <h1 id='artistName'>{item.title}</h1>
             {/* <p>{item.content}</p> */}
-            <Carousel images={images} />
+            {/* <Carousel images={images} /> */}
             
           </div>
         ))}
       </div>
-      <button id="prev" onClick={prevSlide}>Prev</button>
-      <button id="next" onClick={nextSlide}>Next</button>
+      {/* <button id="prev" onClick={prevSlide}>Prev</button>
+      <button id="next" onClick={nextSlide}>Next</button> */}
     </section>
   );
 };

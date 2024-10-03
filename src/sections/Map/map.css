@@ -5,14 +5,14 @@
 }
 
 @media (max-width: 1900px) {
-  .maptest {
+  .map {
     width: 500px;
     height: 275px;
   }
 }
 
 @media (max-width: 500px) {
-  .maptest {
-    width: 400px;
+  .map {
+    width: auto;
   }
 }

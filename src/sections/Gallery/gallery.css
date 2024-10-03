@@ -62,10 +62,30 @@ height: 320px; */
 @media (max-width: 500px) {
   .slider {
     width: 100%;
+    overflow: hidden;
   }
 
   .item {
     width: 200px;
-    height: 520px;
+    height: 320px;
+    transform: translateX(calc(-120px * var(--adjustedPos)))
+               scale(calc(1 - 0.2 * var(--adjustedPos)))
+               perspective(16px)
+               rotateY(1deg);
+  }
+
+  #artistName {
+    font-size: 1.5rem; /* Smaller font for titles */
+  }
+
+  #prev, #next {
+    font-size: 1rem; /* Smaller buttons */
+    padding: 10px 20px;
+  }
+
+  /* You may want to adjust the Carousel as well */
+  .carousel {
+    width: 100%;
+    height: auto;
   }
 }
