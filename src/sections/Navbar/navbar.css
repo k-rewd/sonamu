@@ -86,10 +86,11 @@
 
 @media (max-width: 500px) {
   nav {
-    position: absolute;
-
-    display: flex;
+    position: fixed;
+    top: 6em;
+    width: auto;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: start;
+    align-items: start; */
   }
 }

@@ -13,11 +13,11 @@ export default function App() {
   return (
     <>
 
-      {/* <Navbar /> */}
+      <Navbar />
 
       <body>
         <Home />
-        {/* <About /> */}
+        <About />
 
         {/* <Artists />
         <Gallery />
