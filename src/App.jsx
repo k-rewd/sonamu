@@ -17,12 +17,12 @@ export default function App() {
 
       <body>
         <Home />
-        <About />
+        {/* <About /> */}
 
-        {/* <Artists />
+        {/* <Artists /> */}
         <Gallery />
-        <Aftercare />
-        <Contact /> */}
+        {/* <Aftercare /> */}
+        {/* <Contact /> */}
       </body>
         {/* <Footer /> */}
 
