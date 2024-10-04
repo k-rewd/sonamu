@@ -1,91 +1,34 @@
 #gallerySection {
   background-color: gray;
   color: black;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
 }
 
-.slider {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  /* overflow: hidden; */
 
-  display: flex;
-  justify-content: center;
-
-}
-
-.item {
-  position: absolute;
-  width: 1000px;
-  height: 520px;
-  /* width: 200px;
-  height: 320px; */
-  text-align: justify;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  transition: 0.5s;
-  /* left: calc((50% - 110px)); */
-  top: 0;
-  
-}
-
-#next, #prev {
-  position: relative;
-  /* top: 40%; */
-  color: red;
-  background-color: transparent;
-  border: none;
-  font-size: xx-large;
-  left: 50px;
-  border: 1px solid red;
-}
-
-#next {
-  left: unset;
-  right: 50px;
-}
-
-/* width: 200px;
-height: 320px; */
-
-#artistName {
-  position: absolute;
-}
 
 @media (max-width: 500px) {
-  .slider {
+  #artistSplash {
+    border: 1px solid red;
     width: 100%;
-    overflow: hidden;
-  }
-
-  .item {
-    width: 200px;
-    height: 320px;
-    transform: translateX(calc(-120px * var(--adjustedPos)))
-               scale(calc(1 - 0.2 * var(--adjustedPos)))
-               perspective(16px)
-               rotateY(1deg);
-  }
-
-  #artistName {
-    font-size: 1.5rem; /* Smaller font for titles */
-  }
-
-  #prev, #next {
-    font-size: 1rem; /* Smaller buttons */
-    padding: 10px 20px;
-  }
-
-  /* You may want to adjust the Carousel as well */
-  .carousel {
+    background-color: rgba(151, 150, 151, 0.514);
+    position: relative;
+    top: 4em;
+    min-height: 70%;
     width: 100%;
-    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  .artistCard {
+    border: 1px solid red;
+    height: 100px;
   }
 }
