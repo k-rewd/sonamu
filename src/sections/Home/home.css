@@ -115,8 +115,8 @@ video {
     
     border: 1px solid red;
     
-    /* display: flex; */
-    /* flex-direction: column-reverse; */
+    /* display: flex;
+    flex-direction: column-reverse; */
   }
   
   .splash-left {
@@ -127,23 +127,23 @@ video {
 
   }
   .logo-seal {
-    position: absolute;
-    
+    position: fixed;
+    top:2em;
   }
   
   .logo-seal img {
     /* display: none; */
-    border: 1px solid red;
-  
+    /* border: 1px solid red; */
+    height: 3em;
 
   }
 
-  .logoimage2 {
+  /* .logoimage2 {
     width: 10%;
   }
   .snm-seal {
     width: 10%;
 
   }
-  
+   */
 }
