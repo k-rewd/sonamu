@@ -113,15 +113,18 @@ video {
   
   .splash {
     
-    border: 1px solid red;
+
     
     /* display: flex;
     flex-direction: column-reverse; */
+    position: absolute;
+    top: 12em;
+    height: 70%;
   }
   
   .splash-left {
     width: 100%;
-    border: 1px solid red;
+
     padding: 0;
 
 

@@ -12,14 +12,14 @@
 }
  */
 
- #navbar {
+#navbar {
   /* height: 100px; */
   /* display: flex;
   justify-content: space-around;
   align-items: flex-end;
 
   list-style: none; */
- }
+}
 
 
 .footer {
@@ -27,7 +27,7 @@
   bottom: 0;
   width: 100%;
   height: 6vh;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
 
   display: flex;
   justify-content: flex-end;
@@ -36,14 +36,14 @@
 }
 
 
- nav {
+nav {
   /* border: 1px solid red; */
 
   top: 0px;
   position: fixed;
   height: 10vh;
   width: 100%;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
 
   display: flex;
   justify-content: flex-end;
@@ -88,9 +88,19 @@
   nav {
     position: fixed;
     top: 6em;
-    width: auto;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: start; */
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: start; */
   }
+
+  .navContainer button {
+    /* border: 1px solid red; */
+
+    flex: 1;
+    max-width: 33vw;
+
+  }
+
 }
