@@ -1,10 +1,9 @@
 
 
 #gallerySection {
-  border: 1px solid pink;
 
-  background-color: gray;
-  color: black;
+  background-color: rgb(31, 31, 31);
+  color: white;
   height: auto;
   /* display: flex;
   justify-content: center;
@@ -19,36 +18,51 @@
 
 
 @media (max-width: 500px) {
+  
   #artistSplash {
     /* border: 1px solid blue; */
     width: 100%;
     background-color: rgba(151, 150, 151, 0.514);
     position: relative;
-    top: 11em;
+    top: 12em;
     width: 100%;
 
     display: flex;
     flex-direction: column;
+    gap:.5em;
   }
 
+  
   .artistCard {
-    /* border: 1px solid red; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     height: fit-content;
+    
+    
   }
   .artistName {
     position: absolute;
     right: 0;
+    margin: 60% 0;
+    font-size: 2em;
+    background-color: rgba(160, 159, 159, 0.384);
+    text-align: right;
+    width: 50%;
+    
   }
   .artistArt-container {
     width: 100%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
   }
   .artistArt {
     /* border: 1px solid red; */
     min-width: 100%;
     height: 350px;
     scroll-snap-align: start;
+    
   }
 }

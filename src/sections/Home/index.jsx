@@ -28,6 +28,7 @@ export default function Home() {
           <Map />
         </div>
         <div className='logo-seal'>
+        {/* <div id='header-overlay'></div> */}
           <img className='logoimage2' src={logoimage2} />
           <img className='snm-seal' src={seal} />
         </div>

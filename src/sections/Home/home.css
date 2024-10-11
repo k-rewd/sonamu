@@ -18,6 +18,14 @@
   width: 100%;
 } */
 
+/* #header-overlay {
+  position: absolute;
+  
+  background-color: rgba(102, 102, 102, 0.404);
+  height: 6em;
+  width: 100%;
+} */
+
 .splash {
   /* border: 1px solid red; */
   background-color: rgba(151, 150, 151, 0.514);
@@ -132,7 +140,7 @@ video {
   .logo-seal {
     position: fixed;
     top:2em;
-
+    z-index: 100;
   }
   
   .logo-seal img {

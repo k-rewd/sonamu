@@ -1,51 +1,59 @@
 import './gallery.css'
 
+
+
+import img2 from '../../assets/ab1.jpg'
+import img3 from '../../assets/bones.jpg'
+import img4 from '../../assets/derek.jpg'
+import img5 from '../../assets/gray.jpg'
+
 export default function Gallery() {
 
 
   const artistsData = [
     {
       name: 'AB',
-      art: ['1', '2', '3', '4', '5', '6', '7', '8'],
+      art: [img2, img3, img4, img5, '6', '7', '8'],
       ig: '@blab_la'
     },
     {
       name: 'BONES',
-      art: ['1', '2'],
+      art: [img3, '2'],
       ig: '@lala_la'
     },
     {
       name: 'GRAY',
-      art: ['1', '2', '3'],
+      art: [img4, '2', '3'],
       ig: '@lalala'
     },
     {
       name: 'DEREK',
-      art: ['1', '2', '3'],
+      art: [img5, '2', '3'],
       ig: '@lalala'
     },
     {
       name: 'RAE',
-      art: ['1', '2', '3'],
+      art: [img2, '2', '3'],
       ig: '@lalala'
     },
     {
       name: 'HAZE',
-      art: ['1', '2', '3'],
+      art: [img3, '2', '3'],
       ig: '@lalala'
     },
     {
       name: 'CHONNY',
-      art: ['1', '2', '3'],
+      art: [img5, '2', '3'],
       ig: '@lalala'
     },
     {
       name: 'YONG',
-      art: ['1', '2', '3'],
+      art: [img3, '2', '3'],
       ig: '@lalala'
     },
   ]
 
+  
   return (
     <section id='gallerySection'>
       <div id="artistSplash">
