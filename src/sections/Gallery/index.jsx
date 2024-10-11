@@ -51,7 +51,15 @@ export default function Gallery() {
       <div id="artistSplash">
         {artistsData.map((artist, index) => (
           <div key={index} className='artistCard'>
-            {artist.name}
+            <h1 className="artistName">{artist.name}</h1><div className='artistArt-container'>
+            {artist.art.map(art =>(
+              <img
+                className='artistArt' //rename art later
+                key={art}
+                src={art}
+              />
+            ))} 
+            </div>
           </div>
         ))}
       </div>
