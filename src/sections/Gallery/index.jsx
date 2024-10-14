@@ -1,14 +1,11 @@
 import './gallery.css'
 
-
-
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
 
 export default function Gallery() {
-
 
   const artistsData = [
     {
@@ -53,24 +50,26 @@ export default function Gallery() {
     },
   ]
 
-  
+
   return (
     <section id='gallerySection'>
       <div id="artistSplash">
         {artistsData.map((artist, index) => (
           <div key={index} className='artistCard'>
-            <h1 className="artistName">{artist.name}</h1><div className='artistArt-container'>
-            {artist.art.map(art =>(
-              <img
-                className='artistArt' //rename art later
-                key={art}
-                src={art}
-              />
-            ))} 
+            <h1 className="artistName">{artist.name}</h1>
+            <div className='artistArt-container'>
+              {artist.art.map(art => (
+                <img
+                  className='artistArt' //rename art later
+                  key={art}
+                  src={art}
+                />
+              ))}
             </div>
           </div>
         ))}
       </div>
+
     </section>
   );
 };
