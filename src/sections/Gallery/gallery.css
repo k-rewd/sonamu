@@ -6,7 +6,7 @@
   color: white;
   min-height: fit-content; /* Ensures it grows as needed */
   margin: 0;
-
+  padding-bottom: 75%;
 }
 
 
