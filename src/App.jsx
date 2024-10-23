@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './sections/Navbar'
 import Home from './sections/Home'
 import Artists from './sections/Artists'
-import Gallery from './sections/Gallery'
+// import Gallery from './sections/Gallery'
 import './styles.css'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
@@ -19,8 +19,8 @@ export default function App() {
         <Home />
         {/* <About /> */}
 
-        {/* <Artists /> */}
-        <Gallery />
+        <Artists />
+        {/* <Gallery /> */}
         {/* <Aftercare /> */}
         <Contact />
       </body>

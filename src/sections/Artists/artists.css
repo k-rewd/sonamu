@@ -1,321 +1,62 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
 
-.artist-videoBackground {
-  width: 100%;
-  height: 100%;
-  /* z-index: -1; */
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-  /* background-color: rgba(0,0,0,.5); */
-}
-
-.modal, .modal-overlay {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-}
-
-.modal-overlay {
-  background-color: rgba(49,49,49,0.8);
-}
-
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background: #f1f1f1;
-  border-radius: 3px;
-
-}
-.wrapper {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-
-}
-
-.container {
-  height: 80vh;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-
-
-}
-
-.card {
-
-
-  width: 90px;
-  height: 70vh;
-  border-radius: .75rem;
-  background-size: cover;
-  
-  overflow: hidden;
-  border-radius: 2rem;
-  margin: 0 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-end; /* might remove */
-  align-items: flex-start; /* might remove */
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-}
-
-
-/* .card > .row {
-  color:white;
-  display: flex;
-  flex-wrap: nowrap;
-  border: 1px solid red;
-} */
-
-/* .card > .row > .icon {
-  background: #223;
-  color:white;
-  border-radius: 50%;
-  height: 65px;
-  width: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:15px;
-} */
-
-/* .card > .row > .description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  height: 80px;
-  width: 520px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition-delay: .3s;
-  transition: all .3s ease;
-} */
 
 #artistsSection {
-  /* height: 100vh; */
-  background-color:rgb(66, 66, 66);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-}
 
-#artist-splash {
-  /* background-color: rgba(247, 247, 247, 0.719); */
-  height: 80vh;
-  width: 100%;
-  /* margin-top: 10%; */
-  position: absolute;
-
-
-}
-.artist {
-  background-color: rgba(104, 104, 104, 0.2);
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
-}
-
-/* .artist-name-container {
-  border: 1px solid red;
-
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-} */
-
-
-.artist-name {
-  /* border: 1px solid red; */
-  transform: rotate(270deg);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.699);
-
-  /* border: 1px solid red; */
-}
-
-input:not(:checked) + .card {
-  cursor: pointer;
-}
-
-input:not(:checked) + label .artist-name {
-  padding: 0;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  min-height: fit-content; /* Ensures it grows as needed */
   margin: 0;
+  padding-bottom: 75%;
 }
 
-/* .artist-images {
+
+
+@media (max-width: 500px) {
+
   
-  width: 50%;
-  overflow-y: scroll;
-  background-color: rgba(255, 255, 255, 0.459);
-  border-radius: 0 25px 25px 0;
-} */
+  #artistSplash {
+    /* border: 1px solid blue; */
+    width: 100%;
+    background-color: rgba(151, 150, 151, 0.514);
+    position: relative;
+    top: 12em;
 
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+  }
 
-
-
-.view-art-button {
-  all: unset;
-  cursor: pointer;
-  position: relative;
-  top:50%;
-  left: 50%;
-  color: white;
-  font-size: 20px;
-}
-
-.view-art-button:hover {
-  /* transform: scale(1.1); */
-  /* scale: 1.1; */
-  text-shadow: 0 0 20px white;
-}
-
-.artist-info {
-  padding: 0 5em 0 1em;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(65, 65, 65, 0.452);
-  color: white;
-}
-
-input:not(:checked) + label .artist-info {
-  background-color: transparent;
-  padding: 0;
-}
-
-input:checked + label .artist-name {
-  transform: translateX(0);
-  transition-delay: .3s;
-  transition: all .3s ease-in-out;
-}
-
-input:not(:checked) + label .artist-name {
-  transition-delay: .3s;
-  transition: all .3s ease-in-out;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-input:not(:checked) + label .view-art-button,
-input:not(:checked) + label .artist-ig,
-input:not(:checked) + label h4 {
-  display: none;
-}
-
-.artist-ig {
-  display: flex;
-  align-items:center;  
   
-  gap: 1rem;
+  .artistCard {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 350px;
+    overflow: hidden;
+    
+  }
+  .artistName {
+    position: absolute;
+    right: 10%;
+    margin: 60% 0;
+    font-size: 2em;
+    background-color: rgba(160, 159, 159, 0.384);
+    text-align: right;
+    width: 100%;
+    
+  }
+  .artistArt-container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    
+  }
+  .artistArt {
+    /* border: 1px solid red; */
+    min-width: 100%;
+    scroll-snap-align: start;
+    
+  }
 }
-
-.artist-ig > i {
-  cursor: pointer;
-}
-
-.artist-ig > i:hover {
-  scale: 1.01;
-  text-shadow: 0 0 20px white;
-}
-
-.fa-instagram {
-  font-size: 50px;
-}
-
-.art {
-  border: 1px solid white;
-  height: 50%;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.description p {
-  color: #b0b0ba;
-  padding-top: 5px;
-}
-
-.description h4 {
-  text-transform: uppercase;
-  
-}
-
-input {
-  display: none;
-}
-
-
-input:checked + label {
-  width: 1200px;
-}
-
-/* input:checked + label .description {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-  
-} */
-
-
-
-.card[for='c1'] {
-  background-image: url('../../assets/ab1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.card[for='c2'] {
-  background-image: url('../../assets/bones.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-.card[for='c3'] {
-  background-image: url('../../assets/gray.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.card[for='c4'] {
-  background-image: url('../../assets/derek.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.card[for='c5'] {
-  background-image: url('../../assets/rae.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-
-

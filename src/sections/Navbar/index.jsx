@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 export default function Navbar() {
 
   const navLinks = ['sonamu', 'artists', 'contact']
-  const navLinkKrn = ['소나무', '아티스트', '갤러리', '연락처']
+  const navLinkKrn = ['소나무', '아티스트', '연락처']
   const krnFontStyle = {
     // fontStyle: 'italic',
     fontFamily: 'Nanum Brush Script',
