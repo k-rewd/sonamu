@@ -4,6 +4,7 @@ import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
+import Carousel from '../Components/Carousel/carousel'
 
 export default function Artists() {
 
@@ -53,7 +54,15 @@ export default function Artists() {
 
   return (
     <section id='artistsSection'>
-      <div id="artistSplash">
+      <div id='artist-desktop'>
+        <div className='artist-splash'>
+
+        </div>
+        {/* <Carousel /> */}
+
+      </div>
+      <div id='artist-mobile'>
+      <div className="artist-splash">
         {artistsData.map((artist, index) => (
           <div key={index} className='artistCard'>
             <h1 className="artistName">{artist.name}</h1>
@@ -69,7 +78,7 @@ export default function Artists() {
           </div>
         ))}
       </div>
-
+      </div>
     </section>
   );
 };
