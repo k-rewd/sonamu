@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 import './carousel.css'
 
+
+
 export default function Carousel({ images }) {
   const [imageIdx, setImageIdx] = useState(0)
 
@@ -21,7 +23,7 @@ export default function Carousel({ images }) {
 
   return (
     <section aria-label='Image Carousel'
-      style={{ width: '100%', height: '100%', position: 'relative'}}>
+      style={{ width: '100%', height: '100%', position: 'relative' }}>
       <div
         style={{
           width: '100%',
@@ -30,11 +32,10 @@ export default function Carousel({ images }) {
           overflow: 'hidden'
         }}
       >
-        {images.map(({ url, alt }, index) => (
+        {images.map((image, index) => (
           <img
-            key={url}
-            src={url}
-            alt={alt}
+            key={index}
+            src={typeof image === 'string' ? image : ''}
             aria-hidden={imageIdx !== index}
             className="carousel-img"
             style={{ translate: `${-100 * imageIdx}%` }} />
@@ -70,7 +71,7 @@ export default function Carousel({ images }) {
             className="carousel-dot-btn"
             aria-label={`View Image ${index + 1}`}
             onClick={() => setImageIdx(index)}
-            >
+          >
             {index === imageIdx ? <CircleDot aria-hidden /> : <Circle />}
           </button>
         ))}

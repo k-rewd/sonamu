@@ -1,12 +1,11 @@
-
-
 #artistsSection {
 
   background-color: rgb(31, 31, 31);
   color: white;
-  min-height: fit-content; /* Ensures it grows as needed */
+  min-height: fit-content;
+  /* Ensures it grows as needed */
   margin: 0;
-  
+
 }
 
 #artist-mobile {
@@ -14,18 +13,41 @@
 }
 
 #artist-desktop {
-  display: block;
   border: 1px solid red;
-}
+  position: relative;
+  top: 150px;
+  min-height: fit-content;
 
-.artist-splash {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding-bottom: 20%;
 }
 
-#artistCard {
+.artist-name {
+  position: absolute;
+  right: 10%;
+  margin: 60% 0;
+  font-size: 2em;
+  background-color: rgba(160, 159, 159, 0.384);
+  text-align: right;
+  width: 100%;
+}
+
+.artist-card {
+  /* overflow: hidden; */
+  border: 1px solid blue;
+
+  height: 50vh;
+  width: 30%;
+}
+
+.art-container {
+  display: flex;
   overflow: hidden;
+  height: 50vh;
 }
-
 
 
 @media (max-width: 500px) {
@@ -40,7 +62,7 @@
   #artistsSection {
     padding-bottom: 75%;
   }
-  
+
   .artist-splash {
     /* border: 1px solid blue; */
     width: 100%;
@@ -50,16 +72,17 @@
 
     display: flex;
     flex-direction: column;
-    gap:.5em;
+    gap: .5em;
   }
 
-  
+
   .artistCard {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 350px;
     overflow: hidden;
-    
+
   }
+
   .artistName {
     position: absolute;
     right: 10%;
@@ -68,8 +91,9 @@
     background-color: rgba(160, 159, 159, 0.384);
     text-align: right;
     width: 100%;
-    
+
   }
+
   .artistArt-container {
     width: 100%;
     display: flex;
@@ -77,12 +101,13 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
-    
+
   }
+
   .artistArt {
     /* border: 1px solid red; */
     min-width: 100%;
     scroll-snap-align: start;
-    
+
   }
 }
