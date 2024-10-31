@@ -38,8 +38,19 @@ export default function Carousel({ images }) {
             src={typeof image === 'string' ? image : ''}
             aria-hidden={imageIdx !== index}
             className="carousel-img"
-            style={{ translate: `${-100 * imageIdx}%` }} />
+            style={{ translate: `${-100 * imageIdx}%` }}
+          />
         ))}
+
+        {/* {images.map(({ url, alt }, index) => (
+          <img
+            key={url}
+            src={url}
+            alt={alt}
+            aria-hidden={imageIdx !== index}
+            className="carousel-img"
+            style={{ translate: `${-100 * imageIdx}%` }} />
+        ))} */}
       </div>
       <button
         onClick={showPrevImage}

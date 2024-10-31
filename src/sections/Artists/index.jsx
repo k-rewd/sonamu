@@ -53,21 +53,22 @@ export default function Artists() {
     },
   ]
 
-  
+
 
   return (
     <section id='artistsSection'>
       <div id='artist-desktop'>
-          {artistsData.map((artist, index) => (
-            <div key={index} className='artist-card'>
-              <h1 className='artist-name'>{artist.name}</h1>
-              <div className='art-container'>
-                
-            <Carousel images={artist.art}/>
-
-              </div>
+        {artistsData.map((artist, index) => (
+          <div key={index} className='artist-card'>
+            <div>
+              
             </div>
-          ))}
+            <h1 className='artist-name'>{artist.name}</h1>
+            <Carousel images={artist.art} />
+            {/* <div className='art-container'>
+            </div> */}
+          </div>
+        ))}
 
       </div>
       <div id='artist-mobile'>
@@ -78,9 +79,9 @@ export default function Artists() {
               <div className='artistArt-container'>
                 {artist.art.map(art => (
                   <img
-                  className='artistArt' //rename art later
-                  key={art}
-                  src={art}
+                    className='artistArt' //rename art later
+                    key={art}
+                    src={art}
                   />
                 ))}
               </div>
