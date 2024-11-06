@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
+import { ChevronLeft, ChevronRight, Circle, CircleDot } from "lucide-react";
 import './carousel.css'
 
 
@@ -57,14 +57,14 @@ export default function Carousel({ images }) {
         className="carousel-btn"
         style={{ left: 0 }}
         aria-label="View Previous Image">
-        <ArrowBigLeft aria-hidden />
+        <ChevronLeft aria-hidden />
       </button>
       <button
         onClick={showNextImage}
         className="carousel-btn"
         style={{ right: 0 }}
         aria-label="View Previous Image">
-        <ArrowBigRight aria-hidden />
+        <ChevronRight aria-hidden />
       </button>
       <div
         style={{
