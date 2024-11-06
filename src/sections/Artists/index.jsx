@@ -7,51 +7,60 @@ import img5 from '../../assets/gray.jpg'
 import Carousel from '../Components/Carousel/carousel'
 import { useState } from 'react'
 
+const artistsData = [
+  {
+    name: 'AB',
+    art: [img2, img3, img4, img5, '', '', ''],
+    ig: '@blab_la'
+  },
+  {
+    name: 'BONES',
+    art: [img3, ''],
+    ig: '@lala_la'
+  },
+  {
+    name: 'GRAY',
+    art: [img4, '', ''],
+    ig: '@lalala'
+  },
+  {
+    name: 'DEREK',
+    art: [img5, '', ''],
+    ig: '@lalala'
+  },
+  {
+    name: 'RAE',
+    art: [img2, '', ''],
+    ig: '@lalala'
+  },
+  {
+    name: 'HAZE',
+    art: [img3, '', ''],
+    ig: '@lalala'
+  },
+  {
+    name: 'CHONNY',
+    art: [img5, '', ''],
+    ig: '@lalala'
+  },
+  {
+    name: 'YONG',
+    art: [img3, '', ''],
+    ig: '@lalala'
+  },
+]
 
 export default function Artists() {
 
-  const artistsData = [
-    {
-      name: 'AB',
-      art: [img2, img3, img4, img5, '', '', ''],
-      ig: '@blab_la'
-    },
-    {
-      name: 'BONES',
-      art: [img3, ''],
-      ig: '@lala_la'
-    },
-    {
-      name: 'GRAY',
-      art: [img4, '', ''],
-      ig: '@lalala'
-    },
-    {
-      name: 'DEREK',
-      art: [img5, '', ''],
-      ig: '@lalala'
-    },
-    {
-      name: 'RAE',
-      art: [img2, '', ''],
-      ig: '@lalala'
-    },
-    {
-      name: 'HAZE',
-      art: [img3, '', ''],
-      ig: '@lalala'
-    },
-    {
-      name: 'CHONNY',
-      art: [img5, '', ''],
-      ig: '@lalala'
-    },
-    {
-      name: 'YONG',
-      art: [img3, '', ''],
-      ig: '@lalala'
-    },
-  ]
+  const [infoToggled, setInfoToggled] = useState(Array(artistsData.length).fill(false));
+
+  
+
+  const toggleInfo = (index) => {
+    setInfoToggled((prev) =>
+      prev.map((toggle, i) => i === index ? !toggle : toggle)
+    )
+  }
 
 
 
@@ -60,13 +69,19 @@ export default function Artists() {
       <div id='artist-desktop'>
         {artistsData.map((artist, index) => (
           <div key={index} className='artist-card'>
-            <div className='art-container'>
-              <Carousel images={artist.art} />
-            </div>
-            <div className='artist-info'>
-              <h1 className='artist-name'>{artist.name}</h1>
-              <div>BUTON</div>
-            </div>
+            {!infoToggled[index] ? (
+              <div className='art-container'>
+                <Carousel images={artist.art} />
+                <button onClick={() => toggleInfo(index)}>book!</button>
+              </div>
+            ) : (
+              <div className='artist-info'>
+                <h1 className='artist-name'>{artist.name}</h1>
+                <p>Instagram: {artist.ig}</p>
+                <button onClick={() => toggleInfo(index)}>back!</button>
+              </div>
+            )
+            }
           </div>
         ))}
 
