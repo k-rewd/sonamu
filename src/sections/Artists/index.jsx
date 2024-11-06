@@ -60,13 +60,13 @@ export default function Artists() {
       <div id='artist-desktop'>
         {artistsData.map((artist, index) => (
           <div key={index} className='artist-card'>
-            <div>
-              
+            <div className='art-container'>
+              <Carousel images={artist.art} />
             </div>
-            <h1 className='artist-name'>{artist.name}</h1>
-            <Carousel images={artist.art} />
-            {/* <div className='art-container'>
-            </div> */}
+            <div className='artist-info'>
+              <h1 className='artist-name'>{artist.name}</h1>
+              <div>BUTON</div>
+            </div>
           </div>
         ))}
 

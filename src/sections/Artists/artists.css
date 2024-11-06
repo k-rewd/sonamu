@@ -24,26 +24,27 @@
   overflow-y: scroll;
 
 }
+.artist-info {
+  border: 1px solid red;
+  margin: 0;
+
+}
 
 .artist-name {
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  margin: -15px 0;
+
 
 }
 
 .artist-card {
-  /* overflow: hidden; */
+  border: 1px solid blue;
   
- 
-  height: 550px;
-  width: 600px;
+  margin: 0;
+  height: 30em;
+  width: 30%;
 }
 
 .art-container {
-
+  height: 25em;
 }
 
 
