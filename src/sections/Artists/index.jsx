@@ -73,14 +73,27 @@ export default function Artists() {
             {/* front */}
             <div className='art-container'>
               <Carousel images={artist.art} />
-              <button className='book-back' onClick={() => toggleInfo(index)}>book!</button>
+              <button className='book-back' onClick={() => toggleInfo(index)}>B O O K</button>
             </div>
 
             {/* back */}
             <div className='artist-info'>
-              <h1 className='artist-name'>{artist.name}</h1>
-              <p>Instagram: {artist.ig}</p>
-              <button className='book-back' onClick={() => toggleInfo(index)}>back!</button>
+              <div className="info-tr">
+                <div className="artist-ig">DM {artist.ig}</div>
+                <h1 className='artist-name'>{ artist.name}</h1>
+              </div>
+              <h4>or</h4>
+              <h3>email artistemail@gmail.com with </h3>
+              <ul className='email-directions'>
+                <li>full name</li>
+                <li>phone number</li>
+                <li>concept</li>
+                <li>placement</li>
+                <li>sizing</li>
+                <li>color/black+gray</li>
+                <li>reference photos</li>
+              </ul>
+              <button className='book-back' onClick={() => toggleInfo(index)}>back</button>
             </div>
             </div>
           </div>

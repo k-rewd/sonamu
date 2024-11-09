@@ -28,8 +28,8 @@
 .artist-card {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 0;
-  
-  
+
+
   width: 30%;
   height: 25em;
   perspective: 1000px;
@@ -48,7 +48,8 @@
 }
 
 /* Front and back faces */
-.art-container, .artist-info {
+.art-container,
+.artist-info {
   position: absolute;
   top: 0;
   left: 0;
@@ -59,30 +60,66 @@
 
 /* Front face */
 .art-container {
-  background: #fff; /* Set a front background if needed */
-  z-index: 2; /* Make sure it displays above back by default */
+  background: #fff;
+  /* Set a front background if needed */
+  z-index: 2;
+  /* Make sure it displays above back by default */
 }
 
 /* Back face */
 .artist-info {
-  background: #333; /* Set a back background color */
-  color: white;
-  transform: rotateY(180deg); /* Flip the back face */
+  background-image: url('../../assets/infobg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  transform: rotateY(180deg);
+  /* Flip the back face */
   z-index: 1;
+
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .10em;
+}
+
+.info-tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .artist-name {
- background: rgba(0, 0, 0, 0.7);
+  font-size: 3em;
 
+}
+
+.email-directions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .book-back {
+  all: unset;
   position: absolute;
-  bottom: 10px; /* Positioning button consistently */
+  bottom: 10%;
+  /* Positioning button consistently */
   left: 50%;
-  transform: translateX(-50%); /* Center the button horizontally */
+  transform: translateX(-50%);
+  /* Center the button horizontally */
+  cursor: pointer;
+  font-size: 25px;
+
+  background-color: black;
+  padding: 2px 10px;
 }
 
+.book-back:hover {
+  text-shadow: 0 0 20px white;
+}
 
 @media (max-width: 500px) {
   #artist-desktop {
