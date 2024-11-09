@@ -24,11 +24,51 @@
   overflow-y: scroll;
 
 }
-.artist-info {
-  border: 1px solid red;
+
+.artist-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 0;
+  
+  
+  width: 30%;
+  height: 25em;
+  perspective: 1000px;
+}
 
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
+.artist-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.art-container, .artist-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Front face */
+.art-container {
+  background: #fff; /* Set a front background if needed */
+  z-index: 2; /* Make sure it displays above back by default */
+}
+
+/* Back face */
+.artist-info {
+  background: #333; /* Set a back background color */
+  color: white;
+  transform: rotateY(180deg); /* Flip the back face */
+  z-index: 1;
 }
 
 .artist-name {
@@ -36,16 +76,11 @@
 
 }
 
-.artist-card {
-  border: 1px solid blue;
-  
-  margin: 0;
-  height: 30em;
-  width: 30%;
-}
-
-.art-container {
-  height: 25em;
+.book-back {
+  position: absolute;
+  bottom: 10px; /* Positioning button consistently */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
 }
 
 

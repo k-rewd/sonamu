@@ -54,7 +54,7 @@ export default function Artists() {
 
   const [infoToggled, setInfoToggled] = useState(Array(artistsData.length).fill(false));
 
-  
+
 
   const toggleInfo = (index) => {
     setInfoToggled((prev) =>
@@ -68,20 +68,21 @@ export default function Artists() {
     <section id='artistsSection'>
       <div id='artist-desktop'>
         {artistsData.map((artist, index) => (
-          <div key={index} className='artist-card'>
-            {!infoToggled[index] ? (
-              <div className='art-container'>
-                <Carousel images={artist.art} />
-                <button onClick={() => toggleInfo(index)}>book!</button>
-              </div>
-            ) : (
-              <div className='artist-info'>
-                <h1 className='artist-name'>{artist.name}</h1>
-                <p>Instagram: {artist.ig}</p>
-                <button onClick={() => toggleInfo(index)}>back!</button>
-              </div>
-            )
-            }
+          <div key={index} className={`artist-card ${infoToggled[index] ? 'flipped' : ''}`}>
+            <div className="card-inner">
+            {/* front */}
+            <div className='art-container'>
+              <Carousel images={artist.art} />
+              <button className='book-back' onClick={() => toggleInfo(index)}>book!</button>
+            </div>
+
+            {/* back */}
+            <div className='artist-info'>
+              <h1 className='artist-name'>{artist.name}</h1>
+              <p>Instagram: {artist.ig}</p>
+              <button className='book-back' onClick={() => toggleInfo(index)}>back!</button>
+            </div>
+            </div>
           </div>
         ))}
 
@@ -109,3 +110,16 @@ export default function Artists() {
 };
 
 
+// {!infoToggled[index] ? (
+//   <div className='art-container'>
+//     <Carousel images={artist.art} />
+//     <button className='book-back' onClick={() => toggleInfo(index)}>book!</button>
+//   </div>
+// ) : (
+//   <div className='artist-info'>
+//     <h1 className='artist-name'>{artist.name}</h1>
+//     <p>Instagram: {artist.ig}</p>
+//     <button className='book-back' onClick={() => toggleInfo(index)}>back!</button>
+//   </div>
+// )
+// }
