@@ -82,7 +82,7 @@ export default function Artists() {
                 <div className="artist-ig">DM {artist.ig}</div>
                 <h1 className='artist-name'>{ artist.name}</h1>
               </div>
-              <h4>or</h4>
+              <h4 >or</h4>
               <h3>email artistemail@gmail.com with </h3>
               <ul className='email-directions'>
                 <li>full name</li>
