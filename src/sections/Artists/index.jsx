@@ -73,7 +73,7 @@ export default function Artists() {
             {/* front */}
             <div className='art-container'>
               <Carousel images={artist.art} />
-              <button className='book-back' onClick={() => toggleInfo(index)}>B O O K</button>
+              <button className='book-back' onClick={() => toggleInfo(index)}><span>book</span></button>
             </div>
 
             {/* back */}
@@ -93,7 +93,9 @@ export default function Artists() {
                 <li>color/black+gray</li>
                 <li>reference photos</li>
               </ul>
-              <button className='book-back' onClick={() => toggleInfo(index)}>back</button>
+              <div>
+              <button className='book-back' onClick={() => toggleInfo(index)}><span>back</span></button>
+              </div>
             </div>
             </div>
           </div>
