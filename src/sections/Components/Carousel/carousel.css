@@ -24,6 +24,7 @@
   padding: 1rem;
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
+  z-index: 1;
   
 }
 
@@ -38,7 +39,7 @@
 }
 
 .carousel-btn > * {
-  stroke: white;
+  stroke: black;
   /* fill: white; */
   width: 2rem;
   height: 2rem;

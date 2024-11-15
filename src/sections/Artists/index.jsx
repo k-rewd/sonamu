@@ -4,48 +4,49 @@ import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
+import firstimg from '../../assets/firstimg.png'
 import Carousel from '../Components/Carousel/carousel'
 import { useState } from 'react'
 
 const artistsData = [
   {
     name: 'AB',
-    art: [img2, img3, img4, img5, '', '', ''],
+    art: [firstimg, img3, img4, img5, '', '', ''],
     ig: '@blab_la'
   },
   {
     name: 'BONES',
-    art: [img3, ''],
+    art: [firstimg, img3, ''],
     ig: '@lala_la'
   },
   {
     name: 'GRAY',
-    art: [img4, '', ''],
+    art: [firstimg, img4, '', ''],
     ig: '@lalala'
   },
   {
     name: 'DEREK',
-    art: [img5, '', ''],
+    art: [firstimg, '', ''],
     ig: '@lalala'
   },
   {
     name: 'RAE',
-    art: [img2, '', ''],
+    art: [firstimg, img2, '', ''],
     ig: '@lalala'
   },
   {
     name: 'HAZE',
-    art: [img3, '', ''],
+    art: [firstimg, img3, '', ''],
     ig: '@lalala'
   },
   {
     name: 'CHONNY',
-    art: [img5, '', ''],
+    art: [firstimg, img5, '', ''],
     ig: '@lalala'
   },
   {
     name: 'YONG',
-    art: [img3, '', ''],
+    art: [firstimg, img3, '', ''],
     ig: '@lalala'
   },
 ]
@@ -71,6 +72,7 @@ export default function Artists() {
           <div key={index} className={`artist-card ${infoToggled[index] ? 'flipped' : ''}`}>
             <div className="card-inner">
             {/* front */}
+            <h1 className='display-name'>{artist.name}</h1>
             <div className='art-container'>
               <Carousel images={artist.art} />
               <button className='book-back' onClick={() => toggleInfo(index)}><span>book</span></button>
