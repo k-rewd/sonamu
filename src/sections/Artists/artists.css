@@ -2,10 +2,10 @@
 
   background-color: rgb(31, 31, 31);
   color: white;
-  min-height: fit-content;
+  min-height: 70vh;
   /* Ensures it grows as needed */
   margin: 0;
-
+  overflow-y: scroll;
   background-image: url('../../assets/snmbg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -96,30 +96,41 @@
   /* Flip the back face */
   z-index: 1;
 
-  padding: 10%;
+  padding: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .10em;
 }
 
-.info-tr {
+.info-directions {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
-.artist-name {
-  font-size: 3em;
-
+.contact-info {
+  /* padding-left: 5%; */
+  border-right: .5px solid rgba(129, 129, 129, 0.5);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
+.artist-ig,
+.artist-email {
+  font-style: italic;
+  display: flex;
+  cursor: pointer;
+}
 .email-directions {
-  width: 100%;
+  border-left: .5px solid rgba(255, 116, 116, 0.5);
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: .5em;
 }
+
 
 .book-back {
   all: unset;
@@ -130,8 +141,16 @@
   cursor: pointer;
   font-size: 30px;
   padding: 2px 10px;
-  color: black;
+  color: gray;
   position: relative;
+}
+
+#artist-back {
+  position: absolute;
+  bottom: 10%;
+}
+.book-back:hover {
+  color: black;
 }
 
 .book-back::before,
@@ -152,6 +171,7 @@
   border-right: 2px solid #333;
   transform: scale(0);
   transform-origin: top right;
+  
 }
 
 .book-back::after {
@@ -159,6 +179,7 @@
   border-left: 2px solid #333;
   transform: scale(0);
   transform-origin: bottom left;
+  
 }
 
 .book-back:hover::before {
@@ -167,7 +188,11 @@
 
 .book-back:hover::after {
   transform: scale(1);
+  
+
 }
+
+
 
 @media (max-width: 500px) {
   #artist-desktop {

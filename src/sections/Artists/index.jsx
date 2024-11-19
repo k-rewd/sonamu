@@ -1,5 +1,7 @@
 import './artists.css'
 
+import { Instagram, Mail } from 'lucide-react'
+
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
@@ -71,34 +73,35 @@ export default function Artists() {
         {artistsData.map((artist, index) => (
           <div key={index} className={`artist-card ${infoToggled[index] ? 'flipped' : ''}`}>
             <div className="card-inner">
-            {/* front */}
-            <h1 className='display-name'>{artist.name}</h1>
-            <div className='art-container'>
-              <Carousel images={artist.art} />
-              <button className='book-back' onClick={() => toggleInfo(index)}><span>book</span></button>
-            </div>
+              {/* front */}
+              <h1 className='display-name'>{artist.name}</h1>
+              <div className='art-container'>
+                <Carousel images={artist.art} />
+                <button className='book-back' onClick={() => toggleInfo(index)}><span>book</span></button>
+              </div>
 
-            {/* back */}
-            <div className='artist-info'>
-              <div className="info-tr">
-                <div className="artist-ig">DM {artist.ig}</div>
-                <h1 className='artist-name'>{ artist.name}</h1>
+              {/* back */}
+              <div className='artist-info'>
+                <div className='info-directions'>
+                  <div className='contact-info'>
+                    <h3 className="artist-ig"><Instagram />: {artist.ig}</h3>
+                    <h3 className="artist-email"> <Mail />: email@email.com</h3>
+                  </div>
+                  <ul className='email-directions'>
+                    <li>full name</li>
+                    <li>age</li>
+                    <li>phone number</li>
+                    <li>concept</li>
+                    <li>placement</li>
+                    <li>sizing</li>
+                    <li>color/black+gray</li>
+                    <li>reference photos</li>
+                  </ul>
+                </div>
+                <div>
+                  <button id='artist-back' className='book-back' onClick={() => toggleInfo(index)}><span>{artist.name}</span></button>
+                </div>
               </div>
-              <h4 >or</h4>
-              <h3>email artistemail@gmail.com with </h3>
-              <ul className='email-directions'>
-                <li>full name</li>
-                <li>phone number</li>
-                <li>concept</li>
-                <li>placement</li>
-                <li>sizing</li>
-                <li>color/black+gray</li>
-                <li>reference photos</li>
-              </ul>
-              <div>
-              <button className='book-back' onClick={() => toggleInfo(index)}><span>back</span></button>
-              </div>
-            </div>
             </div>
           </div>
         ))}
