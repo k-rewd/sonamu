@@ -13,7 +13,7 @@ import { useState } from 'react'
 const artistsData = [
   {
     name: 'AB',
-    art: [firstimg, img3, img4, img5, '', '', ''],
+    art: [firstimg, img3, img4, img5, '', ''],
     ig: '@blab_la'
   },
   {
@@ -47,7 +47,7 @@ const artistsData = [
     ig: '@lalala'
   },
   {
-    name: 'YONG',
+    name: 'GIN',
     art: [firstimg, img3, '', ''],
     ig: '@lalala'
   },
@@ -87,7 +87,7 @@ export default function Artists() {
                     <h3 className="artist-ig"><Instagram />: {artist.ig}</h3>
                     <h3 className="artist-email"> <Mail />: email@email.com</h3>
                   </div>
-                  <ul className='email-directions'>
+                  {/* <ul className='email-directions'>
                     <li>full name</li>
                     <li>age</li>
                     <li>phone number</li>
@@ -96,7 +96,8 @@ export default function Artists() {
                     <li>sizing</li>
                     <li>color/black+gray</li>
                     <li>reference photos</li>
-                  </ul>
+                  </ul> */}
+                  <div>artist img</div>
                 </div>
                 <div>
                   <button id='artist-back' className='book-back' onClick={() => toggleInfo(index)}><span>{artist.name}</span></button>

@@ -9,29 +9,15 @@ import Map from '../Map'
 export default function Home() {
   return (
     <section id='sonamuSection'>
-      {/* <h1 >HOME</h1> */}
       <div className='videoBackground'>
-        {/* <div className='overlay'></div> */}
         <video src={sonamupr} autoPlay loop muted />
-        {/* <video src={sonamupr} autoPlay loop muted />
-        <video src={sonamupr} autoPlay loop muted /> */}
-
       </div>
       <div className='splash'>
-        <div className='splash-left'>
-          <div className='map-info'>
-            <h2>3921 W. 6th street</h2>
-            <h1>koreatown</h1>
-            <h3>los angeles</h3>
-          </div>
-          <h4>walk-ins welcome 12pm - 6pm</h4>
-          <Map />
-        </div>
         <div className='logo-seal'>
-        {/* <div id='header-overlay'></div> */}
           <img className='logoimage2' src={logoimage2} />
           <img className='snm-seal' src={seal} />
         </div>
+        <h1 >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h1>
       </div>
 
     </section>
