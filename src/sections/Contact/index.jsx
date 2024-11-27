@@ -6,7 +6,7 @@ import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
-import sonamupr2 from '../../assets/sonamupr2.mp4'
+// import sonamupr2 from '../../assets/sonamupr2.mp4'
 
 export default function Contact() {
 
