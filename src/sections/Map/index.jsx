@@ -2,8 +2,8 @@ import './map.css'
 
 export default function Map() {
   return(
-    <div>
-      <div className='info'>
+
+      <div className='map-info'>
 
           <iframe
           className='map'
@@ -15,7 +15,7 @@ export default function Map() {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+
 
   )
 }

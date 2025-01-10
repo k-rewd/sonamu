@@ -1,12 +1,18 @@
 import React from 'react'
 import './contact.css'
+
+import { Instagram, Mail } from 'lucide-react'
+
+
 import Carousel from '../Components/Carousel/carousel'
 import img1 from '../../assets/AB.png'
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
-// import sonamupr2 from '../../assets/sonamupr2.mp4'
+import sonamupr from '../../assets/sonamupr.mp4'
+
+import Map from '../Map'
 
 export default function Contact() {
 
@@ -32,10 +38,23 @@ export default function Contact() {
   return (
     <section id='contactSection'>
       <div className='video-background'>
-      {/* <video src={sonamupr2} autoPlay loop muted/> */}
+        <video src={sonamupr} autoPlay loop muted />
       </div>
       <div className='contact-splash'>
+        <Map />
+        <div className="location-hrs">
+          <ul className="location">
+            <li>3921 W. 6th St.</li>
+            <li>KOREATOWN</li>
+            <li>Los Angeles</li>
+          </ul>
+          <ul className="hours">
+            <li>Mon ~ Wed Appointment Only!</li>
+            <li>Thur~Sun 12:00PM~8:00PM</li>
+            <li><Instagram/>DM 💌 or sonamu.tattoo@gmail.com</li>
 
+          </ul>
+        </div>
       </div>
 
     </section>
