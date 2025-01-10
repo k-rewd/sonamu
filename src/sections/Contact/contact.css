@@ -6,7 +6,6 @@
 }
 
 .contact-splash {
-  border: 1px solid red;
   background-color: rgba(110, 110, 110, 0.507);
   height: 75vh;
   width: 100%;
@@ -16,6 +15,7 @@
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 }
 
@@ -34,14 +34,24 @@
 
 }
 
-.location-hrs {
+
+.location-hrs,
+.location,
+.hours {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  
+  font-size: xx-large;
+  color: white;
+
 }
 
-.email {
-  border: 1px solid red;
-  /* width: 75%; */
+.location-hrs {
+  background-color: rgba(112, 112, 112, 0.288);
+
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  gap: 1em;
 }

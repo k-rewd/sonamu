@@ -49,9 +49,9 @@ export default function Contact() {
             <li>Los Angeles</li>
           </ul>
           <ul className="hours">
-            <li>Mon ~ Wed Appointment Only!</li>
+            <li>Mon ~ Wed Appointment Only</li>
             <li>Thur~Sun 12:00PM~8:00PM</li>
-            <li><Instagram/>DM 💌 or sonamu.tattoo@gmail.com</li>
+            <li><Instagram/> or 💌 sonamu.tattoo@gmail.com</li>
 
           </ul>
         </div>
