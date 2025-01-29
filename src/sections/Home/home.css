@@ -43,22 +43,7 @@
 }
 
 
-.logo-seal {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.logoimage2 {
-  filter: invert(1);
-  /* height: 15%; */
-}
-
-.snm-seal {
-  height: 60%;
-}
 
 .splash h1 {
   font-size: 2em;

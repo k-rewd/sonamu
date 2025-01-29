@@ -1,6 +1,8 @@
 import './navbar.css'
-import logo2 from '../../assets/logo2.png'
 import React, { useState } from 'react'
+import logo2 from '../../assets/logo2.png'
+import seal from '../../assets/seal.png'
+import logoimage2 from '../../assets/logo2SANseal.png'
 
 export default function Navbar() {
 
@@ -53,6 +55,10 @@ export default function Navbar() {
 
     <div className='navContainer' >
       <nav>
+        <div className='logo-seal'>
+          <img className='logoimage2' src={logoimage2} />
+          <img className='snm-seal' src={seal} />
+        </div>
         {navLinks.map((nav, index) => renderNavLinks(nav, index))}
       </nav>
       <div className='footer'>

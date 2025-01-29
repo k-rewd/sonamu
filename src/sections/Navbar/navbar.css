@@ -21,6 +21,21 @@
   list-style: none; */
 }
 
+.logo-seal {
+  height: 50%;
+  position: absolute;
+  left: 1em;
+
+}
+
+.logoimage2 {
+  filter: invert(1);
+  height: 100%;
+}
+
+.snm-seal {
+  height: 100%;
+}
 
 .footer {
   position: fixed;

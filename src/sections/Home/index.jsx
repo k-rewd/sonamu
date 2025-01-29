@@ -13,11 +13,11 @@ export default function Home() {
         <video src={sonamupr} autoPlay loop muted />
       </div>
       <div className='splash'>
-        <div className='logo-seal'>
+        {/* <div className='logo-seal'>
           <img className='logoimage2' src={logoimage2} />
           <img className='snm-seal' src={seal} />
-        </div>
-        <h1 >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h1>
+        </div> */}
+        {/* <h1 >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h1> */}
       </div>
 
     </section>
