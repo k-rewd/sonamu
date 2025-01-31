@@ -44,13 +44,13 @@ export default function Contact() {
         <Map />
         <div className="location-hrs">
           <ul className="location">
-            <li>3921 W. 6th St.</li>
-            <li>KOREATOWN</li>
-            <li>Los Angeles</li>
+            <li>3921 w. 6th st.</li>
+            <li>koreatown</li>
+            <li>los angeles</li>
           </ul>
           <ul className="hours">
-            <li>Mon ~ Wed Appointment Only</li>
-            <li>Thur~Sun 12:00PM~8:00PM</li>
+            <li>mon - wed appointment only</li>
+            <li>thurs - sun 12:00pm - 8:00pm</li>
             <li><Instagram/> or 💌 sonamu.tattoo@gmail.com</li>
 
           </ul>

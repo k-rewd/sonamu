@@ -12,42 +12,42 @@ import { useState } from 'react'
 
 const artistsData = [
   {
-    name: 'AB',
+    name: 'ab.',
     art: [firstimg, img3, img4, img5, '', ''],
     ig: '@blab_la'
   },
   {
-    name: 'BONES',
+    name: 'bones.',
     art: [firstimg, img3, ''],
     ig: '@lala_la'
   },
   {
-    name: 'GRAY',
+    name: 'gray.',
     art: [firstimg, img4, '', ''],
     ig: '@lalala'
   },
   {
-    name: 'DEREK',
+    name: 'derek.',
     art: [firstimg, '', ''],
     ig: '@lalala'
   },
   {
-    name: 'RAE',
+    name: 'rae.',
     art: [firstimg, img2, '', ''],
     ig: '@lalala'
   },
   {
-    name: 'HAZE',
+    name: 'haze.',
     art: [firstimg, img3, '', ''],
     ig: '@lalala'
   },
   {
-    name: 'CHONNY',
+    name: 'chonny.',
     art: [firstimg, img5, '', ''],
     ig: '@lalala'
   },
   {
-    name: 'GIN',
+    name: 'gin.',
     art: [firstimg, img3, '', ''],
     ig: '@lalala'
   },

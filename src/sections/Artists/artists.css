@@ -56,6 +56,7 @@
   font-size: 6em;
   color: rgba(0, 0, 0, 0.527);
   /* position: absolute; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
   z-index: 1;
 }
