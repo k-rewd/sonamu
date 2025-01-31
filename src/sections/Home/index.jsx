@@ -8,7 +8,7 @@ import Map from '../Map'
 
 export default function Home() {
   return (
-    <section id='sonamuSection'>
+    <section id='homeSection'>
       <div className='videoBackground'>
         <video src={sonamupr} autoPlay loop muted />
       </div>

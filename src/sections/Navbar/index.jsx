@@ -6,7 +6,7 @@ import logoimage2 from '../../assets/logo2SANseal.png'
 
 export default function Navbar() {
 
-  const navLinks = ['home', 'artists', 'about us']
+  const navLinks = ['home', 'artists', 'contact']
   const navLinkKrn = ['소나무', '아티스트', '연락처']
   const krnFontStyle = {
     // fontStyle: 'italic',
