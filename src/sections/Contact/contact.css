@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: xx-large;
+  font-size: 2rem;
   color: white;
 
 }
@@ -55,4 +55,23 @@
   height: 40%;
   width: 100%;
   gap: 1em;
+}
+
+@media (max-width: 500px) and (min-width: 400px){
+
+  .contact-splash {
+    top: 12em;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .location-hrs,
+  .location,
+  .hours  {
+    font-size: 1rem;
+  }
 }
