@@ -6,6 +6,11 @@ import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
 import img4 from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
+
+import ab3 from '../../assets/ab3.jpg'
+import ab4 from '../../assets/ab4.jpg'
+import ab5 from '../../assets/ab5.jpg'
+
 import firstimg from '../../assets/firstimg.png'
 import Carousel from '../Components/Carousel/carousel'
 import { useState } from 'react'
@@ -13,7 +18,7 @@ import { useState } from 'react'
 const artistsData = [
   {
     name: 'ab.',
-    art: [firstimg, img3, img4, img5, '', ''],
+    art: [img2, ab3, ab4, ab5],
     ig: '@blab_la'
   },
   {
@@ -83,21 +88,11 @@ export default function Artists() {
               {/* back */}
               <div className='artist-info'>
                 <div className='info-directions'>
+                  <div className='artist-portrait'>artist img</div>
                   <div className='contact-info'>
                     <h3 className="artist-ig"><Instagram />: {artist.ig}</h3>
                     <h3 className="artist-email"> <Mail />: email@email.com</h3>
                   </div>
-                  {/* <ul className='email-directions'>
-                    <li>full name</li>
-                    <li>age</li>
-                    <li>phone number</li>
-                    <li>concept</li>
-                    <li>placement</li>
-                    <li>sizing</li>
-                    <li>color/black+gray</li>
-                    <li>reference photos</li>
-                  </ul> */}
-                  <div>artist img</div>
                 </div>
                 <div>
                   <button id='artist-back' className='book-back' onClick={() => toggleInfo(index)}><span>{artist.name}</span></button>
