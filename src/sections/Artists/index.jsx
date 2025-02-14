@@ -4,12 +4,30 @@ import { Instagram, Mail } from 'lucide-react'
 
 import img2 from '../../assets/ab1.jpg'
 import img3 from '../../assets/bones.jpg'
-import img4 from '../../assets/derek.jpg'
+import derek from '../../assets/derek.jpg'
 import img5 from '../../assets/gray.jpg'
 
 import ab3 from '../../assets/ab3.jpg'
 import ab4 from '../../assets/ab4.jpg'
 import ab5 from '../../assets/ab5.jpg'
+
+import bones2 from '../../assets/bones2.png'
+import bones3 from '../../assets/bones3.png'
+import bones4 from '../../assets/bones4.png'
+
+import gray2 from '../../assets/gray2.png'
+import gray3 from '../../assets/gray3.png'
+import gray4 from '../../assets/gray4.png'
+
+import derek2 from '../../assets/derek2.png'
+import derek3 from '../../assets/derek3.png'
+import derek4 from '../../assets/derek4.png'
+
+import rae2 from '../../assets/rae2.png'
+import rae3 from '../../assets/rae3.png'
+import rae4 from '../../assets/rae4.png'
+
+
 
 import firstimg from '../../assets/firstimg.png'
 import Carousel from '../Components/Carousel/carousel'
@@ -23,22 +41,22 @@ const artistsData = [
   },
   {
     name: 'bones.',
-    art: [firstimg, img3, ''],
+    art: [img3, bones2, bones3, bones4],
     ig: '@lala_la'
   },
   {
     name: 'gray.',
-    art: [firstimg, img4, '', ''],
+    art: [img5, gray2, gray3, gray4],
     ig: '@lalala'
   },
   {
     name: 'derek.',
-    art: [firstimg, '', ''],
+    art: [derek, derek2, derek3, derek4],
     ig: '@lalala'
   },
   {
     name: 'rae.',
-    art: [firstimg, img2, '', ''],
+    art: [firstimg, rae2, rae3, rae4],
     ig: '@lalala'
   },
   {
