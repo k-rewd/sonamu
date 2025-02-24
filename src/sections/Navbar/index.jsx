@@ -62,7 +62,7 @@ export default function Navbar() {
         {navLinks.map((nav, index) => renderNavLinks(nav, index))}
       </nav>
       <div className='footer'>
-        <h3>ipsum ipsum ipsum</h3>
+        {/* <h3>ipsum ipsum ipsum</h3> */}
       </div>
     </div>
   )

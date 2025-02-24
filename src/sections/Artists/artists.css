@@ -201,7 +201,7 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 400px)  {
   #artist-desktop {
     top: 13em;
   }
